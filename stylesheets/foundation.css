@@ -825,6 +825,7 @@ filter: none; filter: grayscale(0);
 position: relative;
     font-family: 'entypo', Arial, sans-serif;
     font-size: 2.5em;
+    font-weight: normal;
 color: #767676;
 }
 
@@ -832,6 +833,7 @@ color: #767676;
 position: relative;
     font-family: 'entypo-social', Arial, sans-serif;
     font-size: 2.5em;
+    font-weight: normal;
 color: #767676;
 }
 
@@ -839,6 +841,7 @@ color: #767676;
 position: relative;
     font-family: 'entypo', Arial, sans-serif;
     font-size: 2.5em;
+    font-weight: normal;
 color: #222;
 }
 

@@ -40,6 +40,7 @@ p a, p a:visited { line-height: inherit; }
 
 .mobile {display: none; }
 
+
 .header{
 background-color: #f5f5f5;
 background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAIklEQVQIW2NkQAKXL1/+zwjjgzi6urqMYAEYB8RmROaABAD97w993o5qhwAAAABJRU5ErkJggg==);
@@ -63,6 +64,13 @@ border-top: 1px solid #222;
 border-bottom: 1px solid #c3c3c3;
 text-align: center;
 }
+.article {padding: 20px 0; border-right: 1px solid #c3c3c3;}
+
+.content {}
+
+.title { border-bottom: 1px solid #222;}
+
+.image > img { outline: 1px solid #f5f5f5;}
 
 #footer {background-color: #fff;
 
@@ -518,14 +526,13 @@ div.button-bar ul.button-group:last-child { margin-left: 0; }
 
 
 
-.nav-bar { height: 30px; background: #fff; margin-left: 0; margin-top: 0px; padding: 0; text-align:center }
-#footerbar.nav-bar { height: 33px; background: #fff; margin-left: 0; margin-top: 0px; padding: 0; text-align:center }
-.nav-bar > li {  display: inline-block; position: relative; padding: 0; margin-left: -5px; border-left: 1px solid #c3c3c3; border-right: none; line-height: 48px; -webkit-box-shadow: 1px 0 0 rgba(255, 255, 255, 0.2) inset; -moz-box-shadow: 1px 0 0 rgba(255, 255, 255, 0.2) inset; box-shadow: 1px 0 0 rgba(255, 255, 255, 0.2) inset; }
+.nav-bar { height: 30px; background: #fff; margin-left: 0; margin-top: 0px; padding: 0; text-align:center; }
+.nav-bar > li {  display: inline-block; position: relative; padding: 0; margin-left: px; border-left: 1px solid #c3c3c3; line-height: 48px; -webkit-box-shadow: 1px 0 0 rgba(255, 255, 255, 0.2) inset; -moz-box-shadow: 1px 0 0 rgba(255, 255, 255, 0.2) inset; box-shadow: 1px 0 0 rgba(255, 255, 255, 0.2) inset; }
 .nav-bar > li:first-child { -webkit-box-shadow: 0 0 0; -moz-box-shadow: 0 0 0; box-shadow: 0 0 0; }
 .nav-bar > li:last-child { border-right: solid 1px #c3c3c3; -webkit-box-shadow: 1px 0 0 rgba(255, 255, 255, 0.2) inset, 1px 0 0 rgba(255, 255, 255, 0.2); -moz-box-shadow: 1px 0 0 rgba(255, 255, 255, 0.2) inset, 1px 0 0 rgba(255, 255, 255, 0.2); box-shadow: 1px 0 0 rgba(255, 255, 255, 0.2) inset, 1px 0 0 rgba(255, 255, 255, 0.2); }
-.nav-bar > li.active { background: #2ba6cb; border-color: #2284a1; }
-.nav-bar > li.active > a { color: white; cursor: default; }
-.nav-bar > li.active:hover { background: #2ba6cb; cursor: default; }
+.nav-bar > li.active {    }
+.nav-bar > li.active > a { }
+.nav-bar > li.active:hover {  }
 .nav-bar > li:hover { background: rgba(195, 195, 195, 0.3); }
 .nav-bar > li > a { color: #000; }
 .nav-bar > li ul { margin-bottom: 0; }
@@ -544,6 +551,8 @@ div.button-bar ul.button-group:last-child { margin-left: 0; }
 .nav-bar.vertical > li .flyout.right { left: auto; right: 100%; }
 .nav-bar.vertical > li.active { border-right: solid 1px #2284a1; }
 .nav-bar.vertical > li:last-child { border-bottom: solid 1px #333333; }
+#footerbar.nav-bar { height: 33px; background: #fff; margin-left: 0; margin-top: 0px; padding: 0; text-align:center }
+#footerbar.nav-bar > li { margin-left: -5px; }
 
 .flyout { background: #f2f2f2; padding: 20px; margin: 0; border: 1px solid #d9d9d9; position: absolute; top: 39px; left: -1px; width: 250px; z-index: 40; -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* remove margin on any first-child element */ /* remove margin on last element */ }
 .flyout p { line-height: 1.2; font-size: 13px; }
@@ -846,6 +855,7 @@ color: #222;
 }
 
 
+
 .gplus:hover .icon-social{
 color: #DD4B39;
 }
@@ -940,7 +950,7 @@ div.progress.round .meter { -webkit-border-radius: 1000px; -moz-border-radius: 1
 .top-bar ul { margin-left: 0; display: inline; height: 45px; line-height: 45px; list-style: none; /* Main Navigation links style */ /* Left Side <ul> */ /* Right Side <ul> */ }
 .top-bar ul > li { float: left; color: #767676; font-size: 13px; font-weight: bold;  line-height: 45px; /* Dividers between navigation */ /* Put a button in an <li> but give is a class */ /* Put a search bar or text input in the bar */ /* Hide the triangle for breakpoint menu */ /* li.has-dropdown */ }
 .top-bar ul > li a:not(.button) { color: #767676; display: block; font-size: 13px; font-weight: bold; height: 45px; line-height: 45px; padding: 0 15px; }
-.top-bar ul > li a:hover { color: #d9d9d9; background: rgba(195, 195, 195, 0.3);   }
+.top-bar ul > li a:hover { color: #222; background: rgba(195, 195, 195, 0.3);   }
 .top-bar ul > li.divider { background: black; -webkit-box-shadow: 1px 0 0 rgba(255, 255, 255, 0.1); -moz-box-shadow: 1px 0 0 rgba(255, 255, 255, 0.1); box-shadow: 1px 0 0 rgba(255, 255, 255, 0.1); height: 100%; margin-right: 1px; width: 1px; }
 .top-bar ul > li.has-button a.button { margin: 0 11.25px; }
 .top-bar ul > li.has-button:hover { background: #222222; }

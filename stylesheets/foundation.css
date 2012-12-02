@@ -533,7 +533,7 @@ div.button-bar ul.button-group:last-child { margin-left: 0; }
 .nav-bar > li.active {    }
 .nav-bar > li.active > a { }
 .nav-bar > li.active:hover {  }
-.nav-bar > li:hover { background: rgba(195, 195, 195, 0.3); }
+.nav-bar > li:hover {  background: rgba(195, 195, 195, 0.3); }
 .nav-bar > li > a { color: #000; }
 .nav-bar > li ul { margin-bottom: 0; }
 .nav-bar > li .flyout { display: none; }
@@ -835,6 +835,7 @@ position: relative;
     font-family: 'entypo', Arial, sans-serif;
     font-size: 2.5em;
     font-weight: normal;
+padding-bottom: 3px;
 color: #767676;
 }
 
@@ -843,6 +844,7 @@ position: relative;
     font-family: 'entypo-social', Arial, sans-serif;
     font-size: 2.5em;
     font-weight: normal;
+padding-bottom: 3px;
 color: #767676;
 }
 
@@ -858,18 +860,22 @@ color: #222;
 
 .gplus:hover .icon-social{
 color: #DD4B39;
+border-bottom: 2px solid #DD4B39;
 }
 
 .twitter:hover .icon-social{
 color: #019AD2;
+border-bottom: 2px solid #019AD2;
 }
 
 .tumblr:hover .icon-social{
 color: #2C4762;
+border-bottom: 2px solid #2C4762;
 }
 
 .rss:hover .icon{
 color: #F77F00;
+border-bottom: 2px solid #F77F00;
 }
 
 
@@ -948,7 +954,7 @@ div.progress.round .meter { -webkit-border-radius: 1000px; -moz-border-radius: 1
 
 .top-bar.expanded { height: inherit; }
 .top-bar ul { margin-left: 0; display: inline; height: 45px; line-height: 45px; list-style: none; /* Main Navigation links style */ /* Left Side <ul> */ /* Right Side <ul> */ }
-.top-bar ul > li { float: left; color: #767676; font-size: 13px; font-weight: bold;  line-height: 45px; /* Dividers between navigation */ /* Put a button in an <li> but give is a class */ /* Put a search bar or text input in the bar */ /* Hide the triangle for breakpoint menu */ /* li.has-dropdown */ }
+.top-bar ul > li { float: left; color: #767676; font-size: 13px; font-weight: bold;  line-height: 45px;  /* Dividers between navigation */ /* Put a button in an <li> but give is a class */ /* Put a search bar or text input in the bar */ /* Hide the triangle for breakpoint menu */ /* li.has-dropdown */ }
 .top-bar ul > li a:not(.button) { color: #767676; display: block; font-size: 13px; font-weight: bold; height: 45px; line-height: 45px; padding: 0 15px; }
 .top-bar ul > li a:hover { color: #222; background: rgba(195, 195, 195, 0.3);   }
 .top-bar ul > li.divider { background: black; -webkit-box-shadow: 1px 0 0 rgba(255, 255, 255, 0.1); -moz-box-shadow: 1px 0 0 rgba(255, 255, 255, 0.1); box-shadow: 1px 0 0 rgba(255, 255, 255, 0.1); height: 100%; margin-right: 1px; width: 1px; }

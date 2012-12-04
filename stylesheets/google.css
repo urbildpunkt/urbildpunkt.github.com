@@ -1,4 +1,3 @@
-/* Artfully masterminded by ZURB  */
 
 /* -------------------------------------------------- 
    Table of Contents
@@ -20,7 +19,7 @@
 .top-bar > ul .name h1 { color: white; line-height: 45px; margin: 0; }
 .name a { color: #fff; font-weight: bold; padding: 0 22.5px; font-size: 16px !important; }
 .top-bar > ul .name img { margin-top: -5px; vertical-align: middle; }
-
+.top-bar ul > li a:hover { color: #fff; background: rgba(195, 195, 195, 0.3);   }
 
 .search-hero { background: #f1f1f1; height: 70px; text-align: center; border-bottom: 1px solid #E6E6E6; margin-bottom: 10px;}
 #search {margin-top: -30px;}

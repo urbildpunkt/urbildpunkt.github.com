@@ -1,0 +1,74 @@
+/* Artfully masterminded by ZURB  */
+
+/* -------------------------------------------------- 
+   Table of Contents
+-----------------------------------------------------
+:: Shared Styles
+:: Page Name 1
+:: Page Name 2
+*/
+
+
+/* -----------------------------------------
+   Shared Styles
+----------------------------------------- */
+
+.header{
+height: 345px;
+background-color: #f5f5f5;
+background-image: url('../images/hero-code2.jpg');
+background-position: left top;
+background-repeat: repeat, repeat-x;
+border: 1px solid #c3c3c3;
+outline: 0px solid #222;
+text-align: center;
+}
+
+.icon-link{
+position: relative;
+    font-family: 'entypo', Arial, sans-serif;
+    font-size: 1.6em;
+    font-weight: normal;
+margin-left: 5px;
+color: #767676;
+}
+
+.icon-social-link{
+position: relative;
+    font-family: 'entypo-social', Arial, sans-serif;
+    font-size: 1.6em;
+    font-weight: normal;
+margin-left: 5px;
+color: #767676;
+}
+
+.gplus:hover .icon-social-link{
+color: #DD4B39;
+border-bottom: 1px solid #DD4B39;
+}
+
+.twitter:hover .icon-social-link{
+color: #019AD2;
+border-bottom: 1px solid #019AD2;
+}
+
+.website:hover .icon-link{
+color: #2C4762;
+border-bottom: 1px solid #2C4762;
+}
+
+
+
+
+/* -----------------------------------------
+   Page Name 1
+----------------------------------------- */
+
+
+
+
+/* -----------------------------------------
+   Page Name 2
+----------------------------------------- */
+
+

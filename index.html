@@ -1,8 +1,5 @@
 <!DOCTYPE html>
 
-<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
-<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
 <!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
@@ -13,233 +10,138 @@
 
   <title>Urbildpunkt</title>
   
-
+  <!-- Included CSS Files (Uncompressed) -->
+  <!--
   <link rel="stylesheet" href="stylesheets/foundation.css">
+  -->
   
-  <link rel="stylesheet" href="stylesheets/app.css">
-
+  <!-- Included CSS Files (Compressed) -->
+  <link rel="stylesheet" href="stylesheets/foundation.css">
+  <link rel="stylesheet" href="stylesheets/styles.css">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+      	
   <script src="javascripts/modernizr.foundation.js"></script>
+  
+  
+  <style TYPE="text/css">
+	  
+.hero {
+	background: #f5f5f5;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAIklEQVQIW2NkQAKXL1/+zwjjgzi6urqMYAEYB8RmROaABAD97w993o5qhwAAAABJRU5ErkJggg==);
+	text-align: center;
+	padding:100px 0px 160px 0px;
+	border-top: 1px solid #7F7F7F;
+}
 
-  <!-- IE Fix for HTML5 Tags -->
-  <!--[if lt IE 9]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
+.main {
+	margin-top: -80px;
+padding-bottom: 80px;
+}
 
+
+	  
+  </style>
+  
+  
 </head>
 <body>
 
-	<a name="top"></a>
 
- <!-- Navigation -->
-
-  <nav class="top-bar contain-to-grid desktop" id="" >
-	 
-	  <div class="row">
-        <div class="twelve columns">
-    <ul >
-      <li><h1><img src="images/Ur.gif" id="logo"></h1></li>
-      <li class="name"><a href="index.html" style="color:#000;">Urbildpunkt</a></li>
-    </ul>
-
-    <section>
-      <ul class="left">
-		 <li style="padding-left: 5px;">A Conceptual Design Blog</li>
+<header class="top-bar">
+  <div class="row">
+    <div class="twelve columns">
+		
+	  <ul>   
+        <li class="logo"><span class="bylogo"><a href="index.html" style="color:transparent;"> Ur.<p class="byline">Urbildpunkt</p></a></span></li>
+        <li class="first-last-child"><a href="about.html"><span class="icon"><img src="images/bijou/icons/Person.png"></span> About<p class="byline" style="padding-left: 5px">Resume</p></a></li>       
+        <li ><a href="work.html"><span class="icon"><img src="images/bijou/icons/Briefcase.png"></span> Work<p class="byline" style="padding-left: 5px">Portfolio</p></a></li>
+        <li class="last-child"><a href="labs.html"><span class="icon"><img src="images/bijou/icons/Lab.png"></span> Labs<p class="byline">Projects</p></a></li>
       </ul>
-
-      <ul class="right">
-      <ul class="nav-bar" ></ul>
       
-      <li><a href="about.html" style="padding-right: 20px;">Raison d'être  </a></li>
-	    <li class="rss"><a href="#"><span class="icon">&#59194;</span></a></li>
-	    <li class="tumblr"><a href="#"><span class="icon-social">&#62229;</span></a></li>
-            <li class="twitter"><a href="#"><span class="icon-social">&#62217;</span></a></li>          
-</ul>
-    </section>
-</div>
     </div>
-
-  </nav>
-  
-  <nav class="top-bar contain-to-grid mobile"  id="">
-	 
-	  <div class="row">
-        <div class="twelve columns">
-      
-      
-       <ul class="left" style="padding-top: px">
-            <li class="name"><h5><img src="images/Ur.gif" width="20px" id="logo" ><span style="color:#fff;"> Urbildpunkt</span></h5></li>
-            <li><a href="#">Home</a></li>
-            <li class="toggle-topbar"><a href="#"></a></li>
-        </ul>
-
-      
-    </section>
-  
-</div>
-    </div>
-  </nav>
-
-
-  <!-- End Navigation -->
-
-
-  <!-- Header -->
- <header class="header">
-
-
-   <!-- First Band (Slider) -->
-  <!-- The Orbit slider is initialized at the bottom of the page by calling .orbit() on #slider -->
-    
-	  <div class="row">
-        <div class="twelve columns">
-      <div id="slider">
-        <img src="images/Urbildpunkt.gif" />
-        <img src="images/Urbildpunkt.gif" />
-        <img src="images/Urbildpunkt.gif" />
-        <img src="images/Urbildpunkt.gif" />
-      </div>
-      
-  
-</div>
-    </div>
-
-</header>
-  <!-- End Header -->
-    <header class="nav-bg desktop" >
-	  <div class="row">
-        <div class="twelve columns">
-<ul class="nav-bar" >
-   
- </ul>
-</div>
-</div>
-</header>
-
-
-
-
-    
-  <div class="row article" style="background-image: url('images/gplaypattern.png');">
-
-    <div class="eight columns image">
-      <a href="google.html"><img src="images/GoogleXY.png" /></a>
-    </div>
-    <div class="four columns content">
-      <h5 class="title">Google X/Y: Dashboard</h5>
-          <p>A speculative design project exploring Google's place in the Internet of Things. Part of an undergraduate studio at the University of California, San Diego under direction of <a href="http://bratton.info" target="_blank">Benjamin Bratton</a> entitled <i>Google X/Y</i>
-that theorized the company's prospective roles.
-</p>
-    </div>     
-  
   </div>
-
-
-  <div class="row article" >
-
-    <div class="eight columns image">
-      <img src="http://placehold.it/800x400&text=[img2]" />
-    </div>
-    <div class="four columns content">
-      <h5 class="title">This is the Title.</h5>
-          <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
-    </div>      
-
-  </div>
-
-
-
-
  
-
-  <!-- Footer -->
-
-  <footer  >
-  <div class="twelve columns" id="footer">
-      <div class="row">
-      
-
-      <div class="nine columns">
-<br>
-<p style="text-align:center; font-size: 10px">“Great things are not accomplished by those who yield to trends and fads and popular opinion.” ― Jack Kerouac</p>
-      </div>
-
-
-        
-<ul class="nav-bar right" id="footerbar" >
-      <li><a href="#top"><span class="icon-button">&#59231;</span></a></li>
-      <li><a href="index.html"><span class="icon-button">&#8962;</span></a></li>
- </ul>
-
-
-</div>
-
+ <section class="hero">
+    <div class="row">
+    <div class="nine columns centered">
+      <h2>Urbildpunkt</h2>
+      <p class="subheader">John Quealy</p>
+    </div>
   </div>
-  </footer>
+ </section> 
+  
+</header>
 
-  <div class="twelve columns" style="text-align: center">
-<br>
-            <p><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US"  target="_blank"><span class="icon">&#128325;&#128326;&#128327;&#128330;</span></a><a href="http://github.com/urbildpunkt"   target="_blank"><span class="icon-social">&#62209;</span></a></p>
-        </div>
-  <!-- End Footer -->
 
-  <!-- Included JS Files (Uncompressed) -->
-  <!--
+
+<div class="main" >
+
+	<div class="row content">
+
+		<div class="twelve columns" style="outline: 0px solid #0000ff">
+
+
+<div class="row">
+
+    <div class="twelve columns">      
+    <h6 class="category">Featured Projects</h6>
+    </div>
+
+	<div class="four columns">
+		<p class="project-profile">
+			<a href="googlexy.html"><img src="images/projects/feat-dashboard.png" /></a>
+			<br><span class="byline"><a href="googlexy.html">Google X/Y: Dashboard</span></a>
+		</p>
+	</div>
+	
+	<div class="four columns">
+		<p class="project-profile">
+			<a href="work.html#camidesign"><img src="images/projects/feat-camidesign.png" /></a>
+			<br><span class="byline"><a href="work.html#camidesign">camiDESIGN: architecture, interiors, graphics</span></a>
+		</p>
+	</div>
+	
+	<div class="four columns">
+		<p class="project-profile">
+			<a href="labs.html"><img src="http://placehold.it/300x200&text=Labs" /></a>
+		</p>
+	</div>
+      
+</div> <!-- end row -->
+
+
+
+
+
+
+		</div>
+
+	</div>	
+
+</div> <!-- end main -->
+
+
+
+
+<div class="sidebar" >
+
+</div><!-- end sidebar -->
+
+
+
+
+<div class="footer">
+<footer class="row">
+<div class="quote">“Great things are not accomplished by those who yield to trends and fads and popular opinion.” ― Jack Kerouac</div>
+</footer>
+</div>  
+
+<div class="copyright">Urbildpunkt © Copyright 2013 John Quealy</div>
   
-  <script src="javascripts/jquery.js"></script>
-  
-  <script src="javascripts/jquery.foundation.mediaQueryToggle.js"></script>
-  
-  <script src="javascripts/jquery.foundation.forms.js"></script>
-  
-  <script src="javascripts/jquery.foundation.reveal.js"></script>
-  
-  <script src="javascripts/jquery.foundation.orbit.js"></script>
-  
-  <script src="javascripts/jquery.foundation.navigation.js"></script>
-  
-  <script src="javascripts/jquery.foundation.buttons.js"></script>
-  
-  <script src="javascripts/jquery.foundation.tabs.js"></script>
-  
-  <script src="javascripts/jquery.foundation.tooltips.js"></script>
-  
-  <script src="javascripts/jquery.foundation.accordion.js"></script>
-  
-  <script src="javascripts/jquery.placeholder.js"></script>
-  
-  <script src="javascripts/jquery.foundation.alerts.js"></script>
-  
-  <script src="javascripts/jquery.foundation.topbar.js"></script>
-  
-  <script src="javascripts/jquery.foundation.joyride.js"></script>
-  
-  <script src="javascripts/jquery.foundation.clearing.js"></script>
-  
-  <script src="javascripts/jquery.foundation.magellan.js"></script>
-  
-  -->
   
   <!-- Included JS Files (Compressed) -->
-  <script src="javascripts/jquery.js"></script>
   <script src="javascripts/foundation.min.js"></script>
   
-  <!-- Initialize JS Plugins -->
-  <script src="javascripts/app.js"></script>
-
-
-
-<script type="text/javascript">
-  $(window).load(function() {
-    $('#slider').orbit({
-timer: false, 
-directionalNav: false, 
-bullets: true,
-fluid: true,
-animation: 'horizontal-push',
-});
-  });
-</script>
-
- 
+  
 </body>
 </html>

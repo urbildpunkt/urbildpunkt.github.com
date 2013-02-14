@@ -1,0 +1,196 @@
+/* Artfully masterminded by ZURB  */
+
+/* -------------------------------------------------- 
+   Table of Contents
+-----------------------------------------------------
+:: Shared Styles
+:: Page Name 1
+:: Page Name 2
+*/
+
+
+/* -----------------------------------------
+   Shared Styles
+----------------------------------------- */
+
+.hero {
+	background: #f5f5f5;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAIklEQVQIW2NkQAKXL1/+zwjjgzi6urqMYAEYB8RmROaABAD97w993o5qhwAAAABJRU5ErkJggg==);
+	text-align: center;
+	padding:40px 0px 70px 0px;
+	border-top: 1px solid #7F7F7F;
+}
+
+/* <nav> */
+.top-bar { background:#fff; border-bottom: 1px solid #BFBFBF; line-height: 45px; margin: 0 0 0px 0; padding: 0; width: 100%;  }
+.contain-to-grid .top-bar { max-width: 940px; margin: 0 auto; }
+.top-bar.expanded { height: inherit; }
+.top-bar ul { margin: 0 auto; text-align: center; height: 45px; line-height: 45px; list-style: none;  }
+.top-bar ul > li {margin-left: -5px; display: inline-block; width: 15%; height: 45px; text-align: center; border-left: 1px solid #BFBFBF;}
+.top-bar ul > li.last-child  { border-right: 1px solid #BFBFBF;}
+.top-bar ul > li a:not(.button) { display: block; color: #444; font-size: 13px; font-weight: bold; height: 45px; line-height: 45px; padding: 0px;  border:none;}
+.top-bar ul > li:not(.logo):hover, .top-bar ul > li:not(.name):focus { background:#f5f5f5; }
+.top-bar ul > li .byline { border-bottom: none;}
+.top-bar ul > li:hover .byline { border-bottom: none;}
+.top-bar ul > li.active .byline { border-bottom: none;}
+
+.top-bar ul > li.divider { background: #222;  height: 39px; width: 1px; }
+.top-bar ul > li.logo {  background:#fff; background-image: url('../images/code_logo.png'); background-repeat:no-repeat; background-position:center 5px; background-size:40%; height: 60px; z-index: 9999999; border-right: 1px solid #7F7F7F;  border-bottom: 1px solid #7F7F7F; }
+.top-bar ul > li.logo:hover { }
+.top-bar ul > li.has-button a.button { margin: 0 11.25px; }
+.top-bar ul > li.has-button:hover, .top-bar ul > li.has-button:focus { background: #222222; }
+.top-bar ul > li.has-button:hover a, .top-bar ul > li.has-button:focus a { color: #fff; }
+.top-bar > li.logo a { color: #ff0000; }
+.top-bar ul > li.toggle-topbar { display: none; }
+
+.top-bar ul.left { float: left; width: auto; margin-bottom: 0; }
+.top-bar ul.right { float: right; width: auto; margin-bottom: 0;  }
+
+
+.bylogo a {color: #fff;}
+.top-bar ul > li.logo .byline { position: relative; top: 15px; border:none;}
+
+@-moz-document url-prefix() { 
+	.top-bar ul > li.logo .byline { display:none;}
+
+	.top-bar ul > li.logo {position: relative; top:-10px;}
+}
+
+.page-body {
+	height: 100%;
+	margin: 0 auto;
+}
+
+.main {
+	width: 80%;
+	height: 100%;
+	float: left;
+	margin-top: -40px;
+	background: #fff;
+	border-top: 1px solid #7F7F7F;
+	border-right: 1px solid #7F7F7F;
+padding-bottom: 40px;
+}
+
+.content {
+	margin-right: 0;
+	min-height: 400px;
+}
+
+.sidebar {
+	width: 20%;
+	height: 100%;
+	min-height: 400px;
+	float: right;
+	background: #f5f5f5;
+	border-bottom: 1px solid #e9e9e9;
+
+
+}
+
+
+.footer {
+	clear: both;
+	min-height: 50px;
+	border-top: 1px solid #BFBFBF;
+	border-bottom: 1px solid #222;
+	background: #fff;
+	padding-top: 15px;
+	text-align: center;
+}
+
+/* Topbar Specific Breakpoint that you can customize */
+@media only screen and (max-width: 1024px) {  
+/* <nav> */
+.top-bar ul > li { margin-left: -4px; }
+.top-bar ul > li.logo { background-position:center 10px; background-size:40px 29px;}
+
+.main {
+
+	width: 100%;
+	border-right: none;
+
+}
+
+.sidebar {
+	display: none;
+
+}
+
+}
+@media only screen and (max-width: 650px) {  
+/* <nav> */
+.top-bar ul > li {  width: 25%; margin-left: -3px; }
+.top-bar ul > li.first-last-child {border-left: none;}
+
+
+.top-bar ul > li.divider {height:39px}
+.top-bar ul > li.first-last-child { border-right: none;}
+
+.main {
+	width: 100%;
+	border-right: none;
+}
+
+.sidebar {
+	display: none;
+}
+
+
+}
+
+@media only screen and (max-width: 360px) {  
+/* <nav> */
+.top-bar ul { margin-left:0px;}
+.top-bar ul > li {  width: 25%; }
+
+
+}
+
+
+/* -----------------------------------------
+   Page Name 1
+----------------------------------------- */
+.camidesign {background: url('http://camidesign.com/images/favicon.ico') no-repeat ; padding-left: 17px;}
+
+.project-profile {text-align: center;}
+.project-profile img { outline: 1px solid #BFBFBF;}
+/* -----------------------------------------
+   Page Name 2
+----------------------------------------- */
+
+.info { text-align: left;}
+
+/* Breadcrums ---------------------- */
+ul.breadcrumbs { display: block; padding: 6px 10px 7px; border: none; border-bottom: 1px solid #bfbfbf; -webkit-border-radius: 2px; -moz-border-radius: 2px; -ms-border-radius: 2px; -o-border-radius: 2px; border-radius: 2px; overflow: hidden; margin-left: 0; padding-top: 40px; margin-bottom: 20px;}
+ul.breadcrumbs li { margin: 0; padding: 0 12px 0 0; float: left; list-style: none; }
+ul.breadcrumbs li a, ul.breadcrumbs li span { text-transform: uppercase; font-size: 11px; padding-left: 12px; padding-bottom: 0px; border: none; }
+ul.breadcrumbs li:first-child a, ul.breadcrumbs li:first-child span { padding-left: 0; }
+ul.breadcrumbs li:before { content: "/"; color: #aaa; }
+ul.breadcrumbs li:first-child:before { content: " "; }
+ul.breadcrumbs li.current a { cursor: default; color: #888; }
+ul.breadcrumbs li:hover a, ul.breadcrumbs li a:focus { text-decoration: none; }
+ul.breadcrumbs li.current:hover a, ul.breadcrumbs li.current a:focus { text-decoration: none; }
+ul.breadcrumbs li.unavailable a { color: #999; }
+ul.breadcrumbs li.unavailable:hover a, ul.breadcrumbs li.unavailable a:focus { text-decoration: none; color: #999; cursor: default; }
+
+
+/* Normal Buttons ---------------------- */
+.button { width: auto; background: #2ba6cb; border: 1px solid #1e728c; -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset; -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset; box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset; color: white; cursor: pointer; display: inline-block; font-family: inherit; font-size: 14px; font-weight: bold; line-height: 1; margin: 0; margin-bottom: 20px; outline: none; padding: 10px 20px 11px; position: relative; text-align: center; text-decoration: none; -webkit-transition: background-color 0.15s ease-in-out; -moz-transition: background-color 0.15s ease-in-out; -o-transition: background-color 0.15s ease-in-out; transition: background-color 0.15s ease-in-out; /* Hovers */ /* Sizes */ /* Colors */ /* Radii */ /* Layout */ /* Disabled ---------- */ }
+.button:hover { color: white; background-color: #2284a1; }
+.button:active { -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2) inset; -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2) inset; box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2) inset; }
+.button:focus { -webkit-box-shadow: 0 0 4px #2ba6cb, 0 1px 0 rgba(255, 255, 255, 0.5) inset; -moz-box-shadow: 0 0 4px #2ba6cb, 0 1px 0 rgba(255, 255, 255, 0.5) inset; box-shadow: 0 0 4px #2ba6cb, 0 1px 0 rgba(255, 255, 255, 0.5) inset; color: white; }
+.button.large { font-size: 17px; padding: 15px 30px 16px; }
+.button.medium { font-size: 14px; }
+.button.small { font-size: 11px; padding: 7px 14px 8px; }
+.button.tiny { font-size: 10px; padding: 5px 10px 6px; }
+.button.expand { width: 100%; text-align: center; }
+.button.primary { background-color: #2ba6cb; border: 1px solid #1e728c; }
+.button.primary:hover { background-color: #2284a1; }
+.button.primary:focus { -webkit-box-shadow: 0 0 4px #2ba6cb, 0 1px 0 rgba(255, 255, 255, 0.5) inset; -moz-box-shadow: 0 0 4px #2ba6cb, 0 1px 0 rgba(255, 255, 255, 0.5) inset; box-shadow: 0 0 4px #2ba6cb, 0 1px 0 rgba(255, 255, 255, 0.5) inset; }
+.button.alert:focus { -webkit-box-shadow: 0 0 4px #c60f13, 0 1px 0 rgba(255, 255, 255, 0.5) inset; -moz-box-shadow: 0 0 4px #c60f13, 0 1px 0 rgba(255, 255, 255, 0.5) inset; box-shadow: 0 0 4px #c60f13, 0 1px 0 rgba(255, 255, 255, 0.5) inset; }
+.button.secondary { background-color: #fff; color: #1d1d1d; border: 1px solid #c3c3c3; }
+.button.secondary:hover { background-color: rgba(195, 195, 195, 0.3);; }
+.button.secondary:focus { -webkit-box-shadow: 0 0 5px #e9e9e9, 0 1px 0 rgba(255, 255, 255, 0.5) inset; -moz-box-shadow: 0 0 5px #e9e9e9, 0 1px 0 rgba(255, 255, 255, 0.5) inset; box-shadow: 0 0 5px #e9e9e9, 0 1px 0 rgba(255, 255, 255, 0.5) inset; }
+
+

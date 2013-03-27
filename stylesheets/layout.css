@@ -198,6 +198,19 @@ nav .logo {
 
 #bottomNav li:hover .icon-caret-up, #bottomNav li:hover .icon-home {color: #0766BA;}
 
+a.twtr-user, .twtr-widget h4, .twtr-widget h3, .twtr-hd, .twtr-ft {
+    display: none;
+}
+
+#twtr-widget-1 a.twtr-timestamp {display: block; width: 100px;}
+#twtr-widget-1 em {color:#fff;}
+#twtr-widget-1 a.twtr-reply {display: inline-block; width: 0px; height: 20px; overflow:hidden; padding-left: 20px; margin-left: 10px; margin-top: 3px; background: url(https://si0.twimg.com/images/dev/cms/intents/icons/reply.png) no-repeat;}
+#twtr-widget-1 a.twtr-reply:hover {background: url(https://si0.twimg.com/images/dev/cms/intents/icons/reply_hover.png) no-repeat;}
+#twtr-widget-1 a.twtr-rt {display: inline-block; width: 0px; height: 20px; overflow:hidden; padding-left: 20px; margin-left: 10px; background: url(https://si0.twimg.com/images/dev/cms/intents/icons/retweet.png) no-repeat;}
+#twtr-widget-1 a.twtr-rt:hover {background: url(https://si0.twimg.com/images/dev/cms/intents/icons/retweet_hover.png) no-repeat;}
+#twtr-widget-1 a.twtr-fav {display: inline-block; width: 0px; height: 20px; overflow:hidden; padding-left: 20px; margin-left: 10px; background: url(https://si0.twimg.com/images/dev/cms/intents/icons/favorite.png) no-repeat;}
+#twtr-widget-1 a.twtr-fav:hover {background: url(https://si0.twimg.com/images/dev/cms/intents/icons/favorite_hover.png) no-repeat;}
+
 /* #Page Styles
 ================================================== */
 .nav-icon {color: #0766BA; font-size: 13px;}
@@ -346,9 +359,18 @@ nav .logo {
 			}
 	
 	}
+    
+        @media only screen and (max-width: 1000px) {
+		#twtr-widget-1 {
+				display: none;
+			}
+	
+	}
 
 	/* Tablet Portrait size to standard 960 (devices and browsers) */
-	@media only screen and (min-width: 768px) and (max-width: 959px) {}
+	@media only screen and (min-width: 768px) and (max-width: 959px) {
+           
+        }
 
 	/* All Mobile Sizes (devices and browser) */
 	@media only screen and (max-width: 720px) {

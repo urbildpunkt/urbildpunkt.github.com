@@ -35,9 +35,6 @@
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script type="text/javascript" src="js/processing-1.4.1.min.js"></script>
 	<script type="text/javascript" src="js/scripts.js"></script>
-	 
-		
-
 
 </head>
 <body>
@@ -167,8 +164,39 @@
 	
 	
 	<div class="two columns sidebar" id="sidebarRight">
-		<p></p>
-	</div>
+    <script type="text/javascript" src="//widgets.twimg.com/j/2/widget.js"></script>
+<script type='text/javascript'>
+new TWTR.Widget({
+  version: 2,
+  type: 'profile',
+  rpp: 4,
+  interval: 6000,
+  width: 130,
+  height: 288,
+  theme: {
+    shell: {
+      background: 'transparent',
+      color: '#222'
+    },
+    tweets: {
+      background: 'transparent',
+      color: '#525252',
+      links: '#0766BA'
+    }
+  },
+  features: {
+    scrollbar: false,
+    loop: false,
+    live: false,
+    hashtags: true,
+    timestamp: true,
+    avatars: false,
+    behavior: 'all'
+  }
+}).render().setUser('urbildpunkt').start();
+</script>
+    
+</div>
 	
 	
 	

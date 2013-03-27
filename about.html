@@ -1,214 +1,280 @@
 <!DOCTYPE html>
-
-<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
 <head>
-  <meta charset="utf-8" />
 
-  <!-- Set the viewport width to device width for mobile -->
-  <meta name="viewport" content="width=device-width" />
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Urbildpunkt.</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
 
-  <title>Urbildpunkt</title>
-  
-  <!-- Included CSS Files (Uncompressed) -->
-  <!--
-  <link rel="stylesheet" href="stylesheets/foundation.css">
-  -->
-  
-  <!-- Included CSS Files (Compressed) -->
-  <link rel="stylesheet" href="stylesheets/foundation.css">
-  <link rel="stylesheet" href="stylesheets/styles.css">
-  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-  	
-  <script src="javascripts/modernizr.foundation.js"></script>
-  
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="stylesheets/base.css">
+	<link rel="stylesheet" href="stylesheets/skeleton.css">
+	<link rel="stylesheet" href="stylesheets/layout.css">
+	<link rel="stylesheet" href="stylesheets/font-awesome.min.css">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="images/favicon.ico">
+	
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/processing-1.4.1.min.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+	 
+		
+
+
 </head>
 <body>
 
 
-<header class="top-bar">
-  <div class="row">
-    <div class="twelve columns">
+
+	<!-- Primary Page Layout
+	================================================== -->
+
+	<!-- Header -->
+	<a name="top"></a>
+
+	<nav class="clearfix">
+		<ul class="clearfix">
+			<li class="name"><a href="index.html">Urbild<span class="secondary">punkt.</span></a></li>
+			<li class="mobile"><a href="index.html"><i class="icon-home nav-icon"></i> Home</a></li>
+			<li><a href="about.html"><i class="icon-user nav-icon"></i> About<p class="byline">Resume</p></a></li>
+			<li><a href="work.html"><i class="icon-briefcase nav-icon"></i> Work<p class="byline">Portfolio</p></a></li>
+			<li><a href="labs.html"><i class="icon-beaker nav-icon"></i> Labs<p class="byline">Projects</p></a></li>
+			<li><a href="#"><i class="icon-pencil nav-icon"></i> Blog<p class="byline">Writing</p></a></li>	
+			<li class="contact"><a href="contact.html"><i class="icon-envelope-alt nav-icon"></i> Contact<p class="byline">Hire Me!</p></a></li>	
+		</ul>
+			<a href="#" id="pull">Urbild<span class="secondary">punkt.</span></a>
+	</nav>
+	
+	
+	<!-- Hero -->
+
+    <div id="heroCanvas" role="main">
+	    <canvas id="respondCanvas" data-processing-sources="js/heroCanvas.js" width="100" height="100"></canvas>
+    </div>
+    
+    
+    <!-- Body -->
+    <div class="container">
+	<div class="row">
+	
 		
-	  <ul>   
-        <li class="logo"><span class="bylogo"><a href="index.html" style="color:transparent;"> Ur.<p class="byline">Urbildpunkt</p></a></span></li>
-        <li class="active first-last-child"><a href="about.html"><span class="icon"><img src="images/bijou/icons/Person.png"></span> About<p class="byline" style="padding-left: 5px">Resume</p></a></li>       
-        <li ><a href="work.html"><span class="icon"><img src="images/bijou/icons/Briefcase.png"></span> Work<p class="byline" style="padding-left: 5px">Portfolio</p></a></li>
-        <li class="last-child"><a href="labs.html"><span class="icon"><img src="images/bijou/icons/Lab.png"></span> Labs<p class="byline">Projects</p></a></li>
-      </ul>
-      
-    </div>
-  </div>
- 
- <section class="hero">
-    <div class="row">
-    <div class="nine columns centered">
-      <h2>John Quealy</h2>
-      <p class="subheader">Web Design & Development</p>
-    </div>
-  </div>
- </section> 
-  
-</header>
-
-
-
-<div class="main" >
-
-	<div class="row content">
-
-		<div class="twelve columns" style="outline: 0px solid #0000ff">
-
-
-<div class="row">
-	  <br>
-	<div class="two columns">
-      <p class="category"><span class="icon"><img src="images/icons/User.png"></span> Introduction</p>
+	<div class="two columns sidebar" id="sidebarLeft">
+		<p></p>
 	</div>
-    
-    
-    <div class="nine columns">
-           <h6>Urbildpunkt  <small>(German)</small></h6>
-<p><span class="byline"><b>Urbild</b>: prototype, archetype, exemplar + <b>punkt</b>: pixel.</span></p>
-
-    <p>I am focused on exploring technology and culture through design and its analysis.</p>
-   
-	</div>
-      
-</div> <!-- end row -->
-
-<br>
-
-<div class="row">
-
-	<div class="two columns">
-      <p class="category"><span class="icon"><img src="images/icons/Library.png"></span> Education</p>
-	</div>
-    
-    
-    <div class="nine columns">
-        <div class="project">       
-			<h6>University of California, San Diego <span class="byline">2010 - 2012 Cum Laude</span></h6>
-            <p>Bachelor of Arts: Interdisciplinary Computing and the Arts</p>
-            <p><span class="icon"><img src="images/bijou/icons/Quote.png"></span> ICAM draws upon and aims to bring together ideas and paradigms from computer science, art, and cultural theory. It prepares students to mediate between the worlds of computer science and technology, the arts, and the culture at large. <span class="note"><a href="http://visarts.ucsd.edu" target="_blank">UCSD Visual Arts Department</a></span></p>	
-			<span class="byline">Influential Professors: <a href="http://bratton.info/" target="_blank">Benjamin Bratton</a> <a href="http://visarts.ucsd.edu/faculty/brett-stalbaum" target="_blank">Brett Stalbaum</a> <a href="http://visarts.ucsd.edu/~gd2/faculty/ricardo-dominguez" target="_blank">Ricardo Dominguez</a> <a href="http://www.manovich.net/" target="_blank">Lev Manovich</a> <a href="http://crca.ucsd.edu/sheldon/" target="_blank">Sheldon Brown</a> </span>
+	
+	
+	<div class="twelve columns" id="main">
+		<div class="heading">
+		<h4>John Quealy</h4>
+		<p style="margin-top: -15px;"><span class="small"><small>About Me</small><br></span>Urbild<strong>punkt.</strong></p>
 		</div>
-	</div>
-      
-</div> <!-- end row -->
-
-<br>
-
-<div class="row">
-
-	<div class="two columns">
-      <p class="category"><span class="icon"><img src="images/bijou/icons/Factory.png"></span> Experience</p>
-	</div>
-    
-    
-    <div class="nine columns">
-        <div class="project">       
-			<h6>Freelance Web Design & Development <span class="byline">2011 - Present</span></h6>
-            <p>I do all of my coding by hand in a so that every line, word, and character is deliberate; an effort to make certain that the code stays clean and efficient.</p>
-            <p><strong>Skills </strong><br><span class="byline"> <strong>N:</strong> Novice  <strong>AB:</strong> Advanced Beginner  <strong>C:</strong> Competent  <strong>P:</strong> Proficient  <strong>E:</strong> Expert <a href="http://en.wikipedia.org/wiki/Dreyfus_model_of_skill_acquisition" target="_bank">(Drefus Model)</a></span></p>
-             <div class='row'>
-            <div class='four columns'>
-					<p><strong><span class="icon">Front-End Development</strong><ul class="square">
-				  <li>HTML5 <strong class="byline">E</strong></li>
-				  <li>CSS <strong class="byline">E</strong></li>
-				  <li>JavaScript <strong class="byline">P</strong></li>
-					<ul></p>
+		
+		<br class='clear'>
+		
+		<div class="project">
+			
+			<div class="row">
+				<div class="four columns alpha projectInfo">
+					<span class="button-nolink"><h5><i class="icon-user icon-large" style="padding-right: 2px;"></i> Introduction</h5></span>
+				</div>
+				
+				<div class="seven columns">
+					<p>Graduating from an interdisciplinary computing and the arts program, my interests lie somewhere in the intersection of art, technology, and culture. I believe that technology can have an important role in improving people's lives as well as the ways in which they interact with the world, and I want to help design these interfaces to our world.</p>
+				</div>
 			</div>
-			<div class='four columns'>
- 					<p><strong>Back-End Development</strong><ul class="square">
-				  <li>PHP <strong class="byline">C</strong></li>
-				  <li>CMS (e.g. Wordpress) <strong class="byline">C</strong></li>
-					<ul></p>
+			
+		</div><!-- End Project -->
+		
+		<br class='clear'>
+		
+		<div class="project">
+			
+			<div class="row">
+				<div class="four columns alpha projectInfo">
+					<span class="button-nolink"><h5><i class="icon-beaker icon-large"></i> Education</h5><p class="small">UCSD '12</p></span>
+					<img src="images/ucsd.png">
+				</div>
+				
+				<div class="seven columns">
+				<h5><strong>University of California, San Diego</strong> <span class="small">2012</span></h5>
+					<p>B.A. Interdisciplinary Computing and the Arts</p>
+					<p><i class="icon-quote-left"></i> ICAM draws upon and aims to bring together ideas and paradigms from computer science, art, and cultural theory. It prepares students to mediate between the worlds of computer science and technology, the arts, and the culture at large. <a href="http://visarts.ucsd.edu" target="_blank"> UCSD Visual Arts Department</a></span></p>	
+				</div>
 			</div>
-			<div class='four columns'>
- 					<p><strong>Concentrations</strong><ul class="square">
-				  <li>Use of Web Standards <strong class="byline">E</strong></li>
-				  <li>Cross-Browser Compatibility <strong class="byline">E</strong></li>
-				  <li>Responsive/Mobile-Ready <strong class="byline">E</strong></li>
-				  <li>Grid-Based Layouts <strong class="byline">E</strong></li>
-					<ul></p>
+			
+			<p class="specs"><span class="small"><small>Influential Professors: <a href="http://bratton.info/" target="_blank">Benjamin Bratton</a>, <a href="http://visarts.ucsd.edu/faculty/brett-stalbaum" target="_blank">Brett Stalbaum</a>, <a href="http://visarts.ucsd.edu/~gd2/faculty/ricardo-dominguez" target="_blank">Ricardo Dominguez</a>, <a href="http://www.manovich.net/" target="_blank">Lev Manovich</a>, <a href="http://crca.ucsd.edu/sheldon/" target="_blank">Sheldon Brown</a>.</small></span></p>
+		
+		</div><!-- End Project -->
+		
+		<br class='clear'>
+		
+		<div class="project">
+			
+			<div class="row">
+				<div class="four columns alpha projectInfo">
+					<span class="button-nolink"><h5><i class="icon-briefcase icon-large" style="padding-right: 2px;"></i> Experience</h5></span>
+				</div>
+				
+				<div class="seven columns">
+				<h5>Freelance Web Design & Development <span class="small">2011 - Present</span></h5>
+					<p>I do all of my coding by hand in a so that every line, word, and character is deliberate; an effort to make certain that the code stays clean and efficient.</p>
+				</div>
+				
 			</div>
+			
+			<p class="specs"><strong>Skills <span class="small"><small><a href="http://en.wikipedia.org/wiki/Dreyfus_model_of_skill_acquisition" target="_bank">(Drefus Model)</a></small></span></strong>	
+			<br><span class="small"><small> <strong>N:</strong> Novice  <strong>AB:</strong> Advanced Beginner  <strong>C:</strong> Competent  <strong>P:</strong> Proficient  <strong>E:</strong> Expert</span></small></p>
+				
+            <div class='row'>
+				<div class='four columns projectInfo alpha'>
+						<p><strong>Front-End Development</strong><ul class="square">
+					  <li>HTML5 <strong class="small">E</strong></li>
+					  <li>CSS <strong class="small">E</strong></li>
+					  <li>JavaScript <strong class="small">P</strong></li>
+						<ul></p>
+				</div>
+				<div class='four columns projectInfo'>
+						<p><strong>Back-End Development</strong><ul class="square">
+					  <li>PHP <strong class="small">AB</strong></li>
+					  <li>CMS (e.g. Wordpress) <strong class="small">P</strong></li>
+						<ul></p>
+				</div>
+				<div class='four columns projectInfo omega'>
+						<p><strong>Concentrations</strong><ul class="square">
+					  <li>Use of Web Standards <strong class="small">E</strong></li>
+					  <li>Cross-Browser Compatibility <strong class="small">E</strong></li>
+					  <li>Responsive/Mobile-Ready <strong class="small">E</strong></li>
+					  <li>Grid-Based Layouts <strong class="small">E</strong></li>
+						<ul></p>
+				</div>
 			</div>
-		</div>
-	</div>
-      
-</div> <!-- end row -->
+			
+			
+		
+		</div><!-- End Project -->
 
-<div class="row">
-    
-    <div class="nine columns offset-by-three">
-        <div class="project">       
-			<h6><a href="work.html#camidesign" class="camidesign">camiDESIGN: architecture - interiors - graphics</a> <span class="byline">2011 - 2012 
-			<br>529 Market St Suite 2A, San Diego, CA 92101
-			<br>Camille Towey, licensed architect (619) 279-0412</span></h6>
-            <p>I was responsible for designing and developing products for the company and its clients. 
-            These products included websites, presentations and marketing materials. I also assisted with clerical work such as editing and printing architectural plans as well as applying for permits.</p>
-		</div>
-	</div>
-      
-</div> <!-- end row -->
-
-<div class="row">
-    
-    <div class="nine columns offset-by-three">
-        <div class="project">       
-			<h6><a href="work.html#recycle">Recycle Your Autos</a> <span class="byline">2011 - 2012</span></h6>
-            <p>I was in charge of developing a mobile-ready, fully responsive website that still included a Flash intro. 
-            The website also needed to be bilingual and I took charge of doing all the Spanish translation myself.</p>
-		</div>
-	</div>
-      
-</div> <!-- end row -->
-
-<div class="row">
-    
-    <div class="nine columns offset-by-three">
-        <div class="project">       
-			<h6><a href="work.html#dancingdj">Dancing DJ Productions</a> <span class="byline">2011</span></h6>
-            <p>I was tasked with developing an alternative landing page to the Flash based website for mobile users.</p>
-		</div>
-	</div>
-      
-</div> <!-- end row -->
-
-
-
-
-
-
-		</div>
-
+		<br class='clear'>
+		
+		<div class="project">
+			
+			<div class="row">
+				<div class="four columns alpha projectInfo">
+					<h5><img src="http://camidesign.com/images/favicon.ico"> camiDESIGN</h5>
+					<p class="specs"><small>2011-2012</small><br>Web, Graphic & Print Design, Mobile</p>
+					<a href="work.html#camidesign" class="projectImageLink button"><i class="icon-file pull-left icon-border"></i> View</a>
+				</div>
+			
+				<div class="seven columns">
+				<p>I was responsible for designing and developing products for the company and its clients. These products included websites, presentations and marketing materials. Having taken AutoCAD and drafting courses, I was also able to assist with clerical work such as the editing and printing architectural plans as well as applying for building permits.</p>
+				</div>
+			</div>
+			
+		</div><!-- End Project -->
+		
+		
+		<br class='clear'>
+		
+		
+		<div class="project">
+			
+			<div class="row">
+				<div class="four columns alpha projectInfo">
+					<h5>Recycle Your Autos</h5>
+					<p class="specs"><small>2011-2012</small><br>Web Design, Flash, Mobile</p>
+					<a href="work.html#recycle" class="projectImageLink button"><i class="icon-file pull-left icon-border"></i> View</a>
+				</div>
+				
+				<div class="seven columns">
+				<p>I was in charge of redesigning and developing a mobile-ready, fully responsive website that still included a Flash intro. I even took charge of managing all of the Spanish translation myself as it was also necessary for the website to be fully bilingual.</p>
+				</div>
+			</div>
+		
+		</div><!-- End Project -->
+		
+		
+		<br class='clear'>
+		
+		
+		<div class="project">
+			
+			<div class="row">
+				<div class="four columns alpha projectInfo">
+					<h5>Dancing DJ Productions</h5>
+					<p class="specs"><small>2011</small><br>Web Design, Flash, Mobile</p>
+					<a href="work.html#dancingdj" class="projectImageLink button"><i class="icon-file pull-left icon-border"></i> View</a>
+				</div>
+				
+				<div class="seven columns">
+				<p>I was tasked with developing an alternative landing page to the Flash based website for mobile users. Realizing that a mobile user would most likely only be looking for quick contact and booking details, I decided to create a business card-like design, prioritizing the essential information that would be necessary in that situation. </p>
+				</div>
+			</div>			
+		
+		</div><!-- End Project -->
+		
+		<br class='clear'>		
+		
+	<div class="row" id="sidebarReplace">	
+		<p class="button-nolink">Find me on:</p><br>
+		<a href="http://gplus.to/jquealy" target="_blank"><p class="button" id="google-plus"><i class="icon-google-plus pull-left icon-border"></i> Google+</p></a>
+		<a href="http://twitter.com/jqly" target="_blank"><p class="button" id="twitter"><i class="icon-twitter pull-left icon-border"></i> Twitter</p></a>
+		<a href="http://inkedin.com/in/jquealy" target="_blank"><p class="button" id="linkedin"><i class="icon-linkedin pull-left icon-border"></i> LinkedIn</p></a>
 	</div>	
 
-</div> <!-- end main -->
 
+	<div id="bottomNav">		
+	<ul >
+		<li><a href="index.html"><i class="icon-home"></i></a></li>
+		<li class="right"><a href="#top"><i class="icon-caret-up"></i></a></li>
+		<!-- <li class="social right"><a href="http://twitter.com/urbildpunkt" target="_blank"><i class="icon-twitter twitter-icon"></i></a></li> -->
+	</ul>	
+	</div>
+	
+	</div><!-- End Main -->
+	
+	
+	<div class="two columns sidebar" id="sidebarRight">
+		<p class="button-nolink">Find me on:</p><br>
+		<a href="http://gplus.to/jquealy" target="_blank"><p class="button" id="google-plus"><i class="icon-google-plus pull-left icon-border"></i> Google+</p></a>
+		<a href="http://twitter.com/jqly" target="_blank"><p class="button" id="twitter"><i class="icon-twitter pull-left icon-border"></i> Twitter</p></a>
+		<a href="http://linkedin.com/in/jquealy" target="_blank"><p class="button" id="linkedin"><i class="icon-linkedin pull-left icon-border"></i> LinkedIn</p></a>
+	</div>
+	
+	
+	
+	</div>
+	</div>
+	
+	
+	<!-- Footer -->
+    <footer id="footer">
+		
+		<div class="footing">
+		"Great things are not accomplished by those who yield to trends and fads and popular opinion." - Jack Kerouac
+		</div>
+	
+		<div class="copyright">Urbildpunkt © Copyright 2013 John Quealy</div>
+	
+	</footer>
 
+<!-- End Document
+================================================== -->
 
-
-<div class="sidebar" >
-
-</div><!-- end sidebar -->
-
-
-
-
-<div class="footer">
-<footer class="row">
-<div class="quote">“Great things are not accomplished by those who yield to trends and fads and popular opinion.” ― Jack Kerouac</div>
-</footer>
-</div>  
-
-<div class="copyright">Urbildpunkt © Copyright 2013 John Quealy</div>
-  
-  
-  <!-- Included JS Files (Compressed) -->
-  <script src="javascripts/foundation.min.js"></script>
-  
-  
 </body>
 </html>

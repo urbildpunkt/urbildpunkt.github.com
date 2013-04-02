@@ -192,7 +192,7 @@ body {
     background: #f5f5f5;
     background-image: url('../images/code_logo.png');
     background-repeat: no-repeat;
-    background-position: 8px center;
+    background-position: 4px center;
     background-size: 24%;
     border-left: 1px solid #f5f5f5;
     overflow: hidden;
@@ -208,6 +208,8 @@ body {
 }
 
 .top-bar-section li a:not(.button) {
+    line-height: 15px;
+    padding-bottom: 0px;
     border-bottom: 1px solid #bfbfbf;
   }
   
@@ -219,6 +221,8 @@ body {
   background: #fff;
   border-bottom: 1px solid #0766BA;
 }
+
+.byline { color: #6f6f6f; font-size: 11px; padding-left: 15px; }
 
 #heroCanvas{ 
     display:block; 
@@ -367,6 +371,11 @@ a.twtr-user, .twtr-widget h4, .twtr-widget h3, .twtr-hd, .twtr-ft {
 
     &.expanded { background: #fff; }
   }
+  
+ 
+.top-bar .name {
+    background-position: 8px center;
+}
   
 .top-bar-section ul, .top-bar-section li a:not(.button){
     background: none;

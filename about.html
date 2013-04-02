@@ -1,190 +1,178 @@
+
 <!DOCTYPE html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
 <head>
-
-	<!-- Basic Page Needs
+    <!-- Basic Page Needs
   ================================================== -->
-	<meta charset="utf-8">
-	<title>Urbildpunkt.</title>
-	<meta name="description" content="">
-	<meta name="author" content="">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Urbildpunkt.</title>
 
-	<!-- Mobile Specific Metas
+    <!-- Mobile Specific Metas
   ================================================== -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-	<!-- CSS
+    <!-- CSS
   ================================================== -->
-	<link rel="stylesheet" href="stylesheets/base.css">
-	<link rel="stylesheet" href="stylesheets/skeleton.css">
-	<link rel="stylesheet" href="stylesheets/layout.css">
-	<link rel="stylesheet" href="stylesheets/font-awesome.min.css">
-
-	<!--[if lt IE 9]>
-		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <link rel="stylesheet" href="stylesheets/normalize.css" />
+  <link rel="stylesheet" href="stylesheets/app.css" />
+  <link rel="stylesheet" href="stylesheets/font-awesome.min.css" />
+  
+  <!--[if lt IE 9]>
+    	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
-
-	<!-- Favicons
-	================================================== -->
+    
+  <!-- Favicons
+    ================================================== -->
 	<link rel="shortcut icon" href="images/favicon.ico">
-	
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	<script type="text/javascript" src="js/processing-1.4.1.min.js"></script>
-	<script type="text/javascript" src="js/scripts.js"></script>
-	 
-		
-
-
+    
+  <!-- Javascripts
+  ================================================== -->
+  <script src="javascripts/vendor/custom.modernizr.js"></script>
+  <script type="text/javascript" src="javascripts/processing-1.4.1.min.js"></script>
+      
 </head>
 <body>
 
+<!-- Primary Page Layout
+    ================================================== -->
 
+<!-- Header -->
+<a name="top"></a>
 
-	<!-- Primary Page Layout
-	================================================== -->
-
-	<!-- Header -->
-	<a name="top"></a>
-
-	<nav class="clearfix">
-		<ul class="clearfix">
-			<li class="name"><a href="index.html">Urbild<span class="secondary">punkt.</span></a></li>
-			<li class="mobile"><a href="index.html"><i class="icon-home nav-icon"></i> Home</a></li>
-			<li><a href="about.html"><i class="icon-user nav-icon"></i> About<p class="byline">Resume</p></a></li>
-			<li><a href="work.html"><i class="icon-briefcase nav-icon"></i> Work<p class="byline">Portfolio</p></a></li>
-			<li><a href="labs.html"><i class="icon-beaker nav-icon"></i> Labs<p class="byline">Projects</p></a></li>
-			<li><a href="#"><i class="icon-pencil nav-icon"></i> Blog<p class="byline">Writing</p></a></li>	
-			<li class="contact"><a href="contact.html"><i class="icon-envelope-alt nav-icon"></i> Contact<p class="byline">Hire Me!</p></a></li>	
-		</ul>
-			<a href="#" id="pull">Urbild<span class="secondary">punkt.</span></a>
-	</nav>
-	
-	
-	<!-- Hero -->
-
-    <div id="heroCanvas" role="main">
-	    <canvas id="respondCanvas" data-processing-sources="js/heroCanvas.js" width="100" height="100"></canvas>
-    </div>
+<div class="row">
+    <nav class="top-bar">
+        
+      <ul class="title-area">
+        <!-- Title Area -->
+        <li class="name active">
+          <h3><a href="index.html">Urbild<strong>punkt.</strong></a></h3>
+        </li>
+        <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+        <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+      </ul>
     
-    
-    <!-- Body -->
-    <div class="container">
-	<div class="row">
-	
+      <section class="top-bar-section">
+        <!-- Left Nav Section -->
+        <ul class="right">
+          <li class="active"><a href="about.html"><i class="icon-user nav-icon"></i> About<p class="byline">Resume</p></a></li>
+          <li><a href="work.html"><i class="icon-briefcase nav-icon"></i> Work<p class="byline">Portfolio</p></a></li>
+          <li><a href="labs.html"><i class="icon-beaker nav-icon"></i> Labs<p class="byline">Projects</p></a></li>
+          <li><a href="blog.html"><i class="icon-pencil nav-icon"></i> Blog<p class="byline">Writing</p></a></li>
+          <li><a href="index.html#contact"><i class="icon-envelope-alt nav-icon"></i> Contact<p class="byline">Hire Me!</p></a></li>
+        </ul>
+      </section>   
+    	
+    </nav>
+</div>
+
+<!-- Hero -->
+<div id="heroCanvas" role="main">
+	    <canvas id="respondCanvas" data-processing-sources="javascripts/heroCanvas.js" width="100" height="100"></canvas>
+</div>
+
+<!-- Body -->
+<div class="row" id="content">
+    <!-- Main -->
+    <div id="main">
+        <header id="masthead">
+          <hgroup>
+            <h4>John Quealy</h4>
+            <p class="tagline">Urbild<b>punkt.</b></p>
+          </hgroup>
+          <section>
+            <p>About Me</p>
+          </section>
+        </header>
+        
+        <br class='clear'>
 		
-	<div class="two columns sidebar" id="sidebarLeft">
-		<p></p>
-	</div>
-	
-	
-	<div class="twelve columns" id="main">
-		<div class="heading">
-		<h4>John Quealy</h4>
-		<p style="margin-top: -15px;"><span class="small"><small>About Me</small><br></span>Urbild<strong>punkt.</strong></p>
-		</div>
-		
-		<br class='clear'>
-		
-		<div class="project">
-			
-			<div class="row">
-				<div class="four columns alpha projectInfo">
-					<span class="button-nolink"><h5><i class="icon-user icon-large" style="padding-right: 2px;"></i> Introduction</h5></span>
+		<div class="row">
+        
+		<br class='clear'>	<!-- First Project -->
+        
+				<div class="projectInfo">
+					<h5><i class="icon-coffee icon-large"></i> Introduction</h5>
 				</div>
 				
-				<div class="seven columns">
+				<div class="projectArticle">
 					<p>Graduating from an interdisciplinary computing and the arts program, my interests lie somewhere in the intersection of art, technology, and culture. I believe that technology can have an important role in improving people's lives as well as the ways in which they interact with the world, and I want to help design these interfaces to our world.</p>
 				</div>
-			</div>
 			
 		</div><!-- End Project -->
 		
 		<br class='clear'>
 		
-		<div class="project">
+		<div class="project row">
 			
-			<div class="row">
-				<div class="four columns alpha projectInfo">
-					<span class="button-nolink"><h5><i class="icon-beaker icon-large"></i> Education</h5><p class="small">UCSD '12</p></span>
-					<br><img src="images/ucsd.png"  style="margin-top: -20px;">
+				<div class="projectInfo">
+					<h5><i class="icon-book icon-large"></i> Education</h5>
+					<br><img src="images/ucsd_logo.png" width="100px">
 				</div>
 				
-				<div class="seven columns">
-				<h5><strong>University of California, San Diego</strong> <span class="small">2012</span></h5>
+				<div class="projectArticle">
+				<h5><strong>University of California, San Diego</strong> <small>2012</small></h5>
 					<p>B.A. Interdisciplinary Computing and the Arts</p>
 					<p><i class="icon-quote-left"></i> ICAM draws upon and aims to bring together ideas and paradigms from computer science, art, and cultural theory. It prepares students to mediate between the worlds of computer science and technology, the arts, and the culture at large. <a href="http://visarts.ucsd.edu" target="_blank"> UCSD Visual Arts Department</a></span></p>	
 				</div>
-			</div>
-			
-			<p class="specs"><span class="small"><small>Influential Professors: <a href="http://bratton.info/" target="_blank">Benjamin Bratton</a>, <a href="http://visarts.ucsd.edu/faculty/brett-stalbaum" target="_blank">Brett Stalbaum</a>, <a href="http://visarts.ucsd.edu/~gd2/faculty/ricardo-dominguez" target="_blank">Ricardo Dominguez</a>, <a href="http://www.manovich.net/" target="_blank">Lev Manovich</a>, <a href="http://crca.ucsd.edu/sheldon/" target="_blank">Sheldon Brown</a>.</small></span></p>
+            
+			<p class="text-center"><span class="small"><small>Influential Professors: <a href="http://bratton.info/" target="_blank">Benjamin Bratton</a>, <a href="http://visarts.ucsd.edu/faculty/brett-stalbaum" target="_blank">Brett Stalbaum</a>, <a href="http://visarts.ucsd.edu/~gd2/faculty/ricardo-dominguez" target="_blank">Ricardo Dominguez</a>, <a href="http://www.manovich.net/" target="_blank">Lev Manovich</a>, <a href="http://crca.ucsd.edu/sheldon/" target="_blank">Sheldon Brown</a>.</small></span></p>
 		
 		</div><!-- End Project -->
 		
 		<br class='clear'>
 		
-		<div class="project">
+		<div class="project row">
 			
-			<div class="row">
-				<div class="four columns alpha projectInfo">
-					<span class="button-nolink"><h5><i class="icon-briefcase icon-large" style="padding-right: 2px;"></i> Experience</h5></span>
+				<div class="projectInfo">
+					<h5><i class="icon-trophy icon-large"></i> Experience</h5>
 				</div>
 				
-				<div class="seven columns">
-				<h5>Freelance Web Design & Development <span class="small">2011 - Present</span></h5>
+				<div class="projectArticle">
+				<h5>Freelance Web Design & Development <small>2011 - Present</small></h5>
 					<p>I do all of my coding by hand in a so that every line, word, and character is deliberate; an effort to make certain that the code stays clean and efficient.</p>
 				</div>
-				
-			</div>
-			
-			<p class="specs"><strong>Skills <span class="small"><small><a href="http://en.wikipedia.org/wiki/Dreyfus_model_of_skill_acquisition" target="_bank">(Drefus Model)</a></small></span></strong>	
-			<br><span class="small"><small> <strong>N:</strong> Novice  <strong>AB:</strong> Advanced Beginner  <strong>C:</strong> Competent  <strong>P:</strong> Proficient  <strong>E:</strong> Expert</span></small></p>
-				
-            <div class='row'>
-				<div class='four columns projectInfo alpha'>
-						<p><strong>Front-End Development</strong><ul class="square">
-					  <li>HTML5 <strong class="small">E</strong></li>
-					  <li>CSS <strong class="small">E</strong></li>
-					  <li>JavaScript <strong class="small">P</strong></li>
-						<ul></p>
-				</div>
-				<div class='four columns projectInfo'>
-						<p><strong>Back-End Development</strong><ul class="square">
-					  <li>PHP <strong class="small">AB</strong></li>
-					  <li>CMS (e.g. Wordpress) <strong class="small">P</strong></li>
-						<ul></p>
-				</div>
-				<div class='four columns projectInfo omega'>
-						<p><strong>Concentrations</strong><ul class="square">
-					  <li>Use of Web Standards <strong class="small">E</strong></li>
-					  <li>Cross-Browser Compatibility <strong class="small">E</strong></li>
-					  <li>Responsive/Mobile-Ready <strong class="small">E</strong></li>
-					  <li>Grid-Based Layouts <strong class="small">E</strong></li>
-						<ul></p>
-				</div>
-			</div>
 			
 			
 		
 		</div><!-- End Project -->
+        
+        <p class="text-center"><strong>Skills <small><a href="http://en.wikipedia.org/wiki/Dreyfus_model_of_skill_acquisition" target="_bank">(Drefus Model)</a></small></strong>    
+			<br><span class="small"><small> <strong>N:</strong> Novice  <strong>AB:</strong> Advanced Beginner  <strong>C:</strong> Competent  <strong>P:</strong> Proficient  <strong>E:</strong> Expert</span></small></p>
+        
+        
+        <ul class="small-block-grid-1 large-block-grid-3 text-center">
+          <li><h5>Front-End Development</h5>
+        			  <p>HTML5 <small><b>E</b></small></p>
+					  <p>CSS <small><b>E</b></small></p>
+					  <p>JavaScript <small><b>P</b></small></p></li>
+          <li><h5>Back-End Development</h5>
+    				  <p>PHP <small><b>AB</b></small></p>
+					  <p>CMS (e.g. Wordpress) <small><b>P</b></small></p></li>
+          <li><h5>Concentrations</h5>
+    				  <p>Use of Web Standards <small><b>E</b></small></p>
+					  <p>Cross-Browser Compatibility <small><b>E</b></small></p>
+					  <p>Responsive/Mobile-Ready <small><b>E</b></small></p>
+					  <p>Grid-Based Layouts <small><b>E</b></small></p></li>
+        </ul>
 
 		<br class='clear'>
 		
-		<div class="project">
+		<div class="project row">
 			
-			<div class="row">
-				<div class="four columns alpha projectInfo">
+				<div class="projectInfo">
 					<h5><img src="http://camidesign.com/images/favicon.ico"> camiDESIGN</h5>
 					<p class="specs"><small>2011-2012</small><br>Web, Graphic & Print Design, Mobile</p>
 					<a href="work.html#camidesign" class="projectImageLink button"><i class="icon-file pull-left icon-border"></i> View</a>
 				</div>
 			
-				<div class="seven columns">
+				<div class="projectArticle">
 				<p>I was responsible for designing and developing products for the company and its clients. These products included websites, presentations and marketing materials. Having taken AutoCAD and drafting courses, I was also able to assist with clerical work such as the editing and printing architectural plans as well as applying for building permits.</p>
 				</div>
-			</div>
 			
 		</div><!-- End Project -->
 		
@@ -192,19 +180,17 @@
 		<br class='clear'>
 		
 		
-		<div class="project">
+		<div class="project row">
 			
-			<div class="row">
-				<div class="four columns alpha projectInfo">
+				<div class="projectInfo">
 					<h5>Recycle Your Autos</h5>
 					<p class="specs"><small>2011-2012</small><br>Web Design, Flash, Mobile</p>
 					<a href="work.html#recycle" class="projectImageLink button"><i class="icon-file pull-left icon-border"></i> View</a>
 				</div>
 				
-				<div class="seven columns">
+				<div class="projectArticle">
 				<p>I was in charge of redesigning and developing a mobile-ready, fully responsive website that still included a Flash intro. I even took charge of managing all of the Spanish translation myself as it was also necessary for the website to be fully bilingual.</p>
 				</div>
-			</div>
 		
 		</div><!-- End Project -->
 		
@@ -212,69 +198,107 @@
 		<br class='clear'>
 		
 		
-		<div class="project">
+		<div class="project row">
 			
-			<div class="row">
-				<div class="four columns alpha projectInfo">
+				<div class="projectInfo">
 					<h5>Dancing DJ Productions</h5>
 					<p class="specs"><small>2011</small><br>Web Design, Flash, Mobile</p>
 					<a href="work.html#dancingdj" class="projectImageLink button"><i class="icon-file pull-left icon-border"></i> View</a>
 				</div>
 				
-				<div class="seven columns">
+				<div class="projectArticle">
 				<p>I was tasked with developing an alternative landing page to the Flash based website for mobile users. Realizing that a mobile user would most likely only be looking for quick contact and booking details, I decided to create a business card-like design, prioritizing the essential information that would be necessary in that situation. </p>
-				</div>
-			</div>			
+				</div>			
 		
 		</div><!-- End Project -->
 		
 		<br class='clear'>		
-		
-	<div class="row" id="sidebarReplace">	
-		<p class="button-nolink">Find me on:</p><br>
-		<a href="http://gplus.to/jquealy" target="_blank"><p class="button" id="google-plus"><i class="icon-google-plus pull-left icon-border"></i> Google+</p></a>
-		<a href="http://twitter.com/jqly" target="_blank"><p class="button" id="twitter"><i class="icon-twitter pull-left icon-border"></i> Twitter</p></a>
-		<a href="http://inkedin.com/in/jquealy" target="_blank"><p class="button" id="linkedin"><i class="icon-linkedin pull-left icon-border"></i> LinkedIn</p></a>
-	</div>	
+        
+        <div class="row">
+            <div id="bottomNav">    	
+            	<ul >
+            		<li><a href="index.html"><i class="icon-home"></i></a></li>
+            		<li class="right"><a href="#top"><i class="icon-caret-up"></i></a></li>
+            	</ul>	
+        	</div>
+       </div> 
+   
+    </div><!-- End Main -->
+    
+    <!-- Sidebar -->
+    <div id="sidebar">
+       <header id="sidemast">
+       <h4 style="font-weight: normal;"><a href="http://twitter.com/urbildpunkt" target="_blank"><small><i class="icon-twitter"></i> Urbild<b>punkt.</b></small></a></h4>
+        </header>
+       
+        <script type="text/javascript" src="//widgets.twimg.com/j/2/widget.js"></script>
+        <script type='text/javascript'>
+        new TWTR.Widget({
+          version: 2,
+          type: 'profile',
+          rpp: 7,
+          interval: 6000,
+          width: 200,
+          height: 700,
+          theme: {
+            shell: {
+              background: 'transparent',
+              color: '#222'
+            },
+            tweets: {
+              background: 'transparent',
+              color: '#525252',
+              links: '#0766BA'
+            }
+          },
+          features: {
+            scrollbar: false,
+            loop: false,
+            live: false,
+            hashtags: true,
+            timestamp: true,
+            avatars: false,
+            behavior: 'all'
+          }
+        }).render().setUser('urbildpunkt').start();
+        </script>
+        
+    </div><!-- End Sidebar -->
 
 
-	<div id="bottomNav">		
-	<ul >
-		<li><a href="index.html"><i class="icon-home"></i></a></li>
-		<li class="right"><a href="#top"><i class="icon-caret-up"></i></a></li>
-		<!-- <li class="social right"><a href="http://twitter.com/urbildpunkt" target="_blank"><i class="icon-twitter twitter-icon"></i></a></li> -->
-	</ul>	
-	</div>
-	
-	</div><!-- End Main -->
-	
-	
-	<div class="two columns sidebar" id="sidebarRight">
-		<p class="button-nolink">Find me on:</p><br>
-		<a href="http://gplus.to/jquealy" target="_blank"><p class="button" id="google-plus"><i class="icon-google-plus pull-left icon-border"></i> Google+</p></a>
-		<a href="http://twitter.com/jqly" target="_blank"><p class="button" id="twitter"><i class="icon-twitter pull-left icon-border"></i> Twitter</p></a>
-		<a href="http://linkedin.com/in/jquealy" target="_blank"><p class="button" id="linkedin"><i class="icon-linkedin pull-left icon-border"></i> LinkedIn</p></a>
-	</div>
-	
-	
-	
-	</div>
-	</div>
-	
-	
-	<!-- Footer -->
+</div><!-- End Body -->
+
+    <!-- Footer -->
     <footer id="footer">
 		
-		<div class="footing">
-		"Great things are not accomplished by those who yield to trends and fads and popular opinion." - Jack Kerouac
-		</div>
-	
-		<div class="copyright">Urbildpunkt © Copyright 2013 John Quealy</div>
-	
+        <div class="row"> 
+            <div id="footing">
+    		<p class="adquote">"Great things are not accomplished by those who yield to trends and fads and popular opinion." - Jack Kerouac</p>
+    	
+    		<p class="copyright">Urbildpunkt © Copyright 2013 John Quealy</p>
+    	    </div>   
+	    </div>
 	</footer>
 
-<!-- End Document
-================================================== -->
+  <!-- Moar Javascripts
+  ================================================== -->
+  <script>
+  document.write('<script src=' +
+  ('__proto__' in {} ? 'javascripts/vendor/zepto' : 'javascripts/vendor/jquery') +
+  '.js><\/script>')
+  </script>
+  
+  <script src="javascripts/foundation/foundation.js"></script>
+  
+  <script src="javascripts/foundation/foundation.topbar.js"></script>
 
+	
+  
+  <script>
+    $(document).foundation();
+  </script>
+  
+  <!-- End Document
+================================================== -->
 </body>
 </html>

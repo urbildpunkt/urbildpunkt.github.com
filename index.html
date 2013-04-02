@@ -1,222 +1,249 @@
+
 <!DOCTYPE html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
 <head>
-
-	<!-- Basic Page Needs
+    <!-- Basic Page Needs
   ================================================== -->
-	<meta charset="utf-8">
-	<title>Urbildpunkt.</title>
-	<meta name="description" content="">
-	<meta name="author" content="">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Urbildpunkt.</title>
 
-	<!-- Mobile Specific Metas
+    <!-- Mobile Specific Metas
   ================================================== -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-	<!-- CSS
+    <!-- CSS
   ================================================== -->
-	<link rel="stylesheet" href="stylesheets/base.css">
-	<link rel="stylesheet" href="stylesheets/skeleton.css">
-	<link rel="stylesheet" href="stylesheets/layout.css">
-	<link rel="stylesheet" href="stylesheets/font-awesome.min.css">
-
-	<!--[if lt IE 9]>
-		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <link rel="stylesheet" href="stylesheets/normalize.css" />
+  <link rel="stylesheet" href="stylesheets/app.css" />
+  <link rel="stylesheet" href="stylesheets/font-awesome.min.css" />
+  
+  <!--[if lt IE 9]>
+    	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
-
-	<!-- Favicons
-	================================================== -->
+    
+  <!-- Favicons
+    ================================================== -->
 	<link rel="shortcut icon" href="images/favicon.ico">
-	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-	
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	<script type="text/javascript" src="js/processing-1.4.1.min.js"></script>
-	<script type="text/javascript" src="js/scripts.js"></script>
-
+    
+  <!-- Javascripts
+  ================================================== -->
+  <script src="javascripts/vendor/custom.modernizr.js"></script>
+  <script type="text/javascript" src="javascripts/processing-1.4.1.min.js"></script>
+      
 </head>
 <body>
 
+<!-- Primary Page Layout
+    ================================================== -->
 
+<!-- Header -->
+<a name="top"></a>
 
-	<!-- Primary Page Layout
-	================================================== -->
-
-	<!-- Header -->
-	<a name="top"></a>
-
-	<nav class="clearfix">
-		<ul class="clearfix">
-			<li class="name"><a href="index.html">Urbild<span class="secondary">punkt.</span></a></li>
-			<li class="mobile"><a href="index.html"><i class="icon-home nav-icon"></i> Home</a></li>
-			<li><a href="about.html"><i class="icon-user nav-icon"></i> About<p class="byline">Resume</p></a></li>
-			<li><a href="work.html"><i class="icon-briefcase nav-icon"></i> Work<p class="byline">Portfolio</p></a></li>
-			<li><a href="labs.html"><i class="icon-beaker nav-icon"></i> Labs<p class="byline">Projects</p></a></li>
-			<li><a href="#"><i class="icon-pencil nav-icon"></i> Blog<p class="byline">Writing</p></a></li>	
-			<li class="contact"><a href="contact.html"><i class="icon-envelope-alt nav-icon"></i> Contact<p class="byline">Hire Me!</p></a></li>	
-		</ul>
-			<a href="#" id="pull">Urbild<span class="secondary">punkt.</span></a>
-	</nav>
-	
-	
-	<!-- Hero -->
-
-    <div id="heroCanvas" role="main">
-	    <canvas id="respondCanvas" data-processing-sources="js/heroCanvas.js" width="100" height="100"></canvas>
-    </div>
+<div class="row">
+    <nav class="top-bar">
+        
+      <ul class="title-area">
+        <!-- Title Area -->
+        <li class="name active">
+          <h3><a href="index.html">Urbild<strong>punkt.</strong></a></h3>
+        </li>
+        <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+        <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+      </ul>
     
-    
-    <!-- Body -->
-    <div class="container">
-	<div class="row">
-	
-		
-	<div class="two columns sidebar" id="sidebarLeft">
-		<p></p>
-	</div>
-	
-	
-	<div class="twelve columns" id="main">
-		<div class="heading">
-		<h4>Urbild<strong>punkt.</strong></h4>
-		<p style="margin-top: -15px;"><span class="small"><small>(German)</small></span><br><small><strong>Urbild</strong>: prototype, archetype + <strong>punkt</strong>: pixel, point.</small></p>
-		</div>
-		
-		<br class='clear'>
-		
-		<div class="project">
-			
-			<div class="row">			
-		
-				<h5 style="text-align: center">Hello there.</h5>
-					<p class="intro">Urbild<strong>punkt.</strong>, a combination of two German words that is perhaps no more easier to spell than it is to try and pronounce, but I have chosen it all the same. In a time when every possible domain and username is already taken, I wanted to find something that was unique enough to always be available. But it is more to me than that, I wanted to choose something with meaning. Loosely translating the name a friend and I once used, protopixel, I came up with something that isn't just a word, but a sentence, a description, a process. And that is why I have decided to end it with a period. The meaning can be interpreted in many ways, from the literal prototype or archetype of a design to the actual process of prototyping itself, all of which seem relevant to me. So if it is an unusual choice or a perfect fit, I guess I will just have to give it my all and see.</p>	
-			</div>			
-			
-		</div><!-- End Project -->
-		
-		<br class='clear'>
-		
-		<div class="project">
-		
-		<div class="row">
-			
-			<div class="ten columns offset-by-one projectInfo">
-			<h5>Featured Work</h5>
-			</div>
-			
-		</div>
-		
-		<div class="row">
-			<div class="four columns alpha projectImage">
-			<a href="labs.html#dashboard" class="projectImageLink"><img src="images/project-images/dashboard1.png"></a>
-			<a href="labs.html#dashboard"><p class="specs">Google X/Y: Dashboard</p></a>
-			</div>
-			
-			<div class="four columns projectImage">
-			<a href="labs.html#planeshift" class="projectImageLink"><img src="images/project-images/planeshift1.png"></a>
-			<a href="labs.html#planeshift"><p class="specs">Planeshift</p></a>
-			</div>
-			
-			<div class="four columns omega projectImage">
-			<a href="work.html#camidesign" class="projectImageLink"><img src="images/portfolio-images/camidesign-web.png"></a>
-			<a href="work.html#camidesign"><p class="specs">camiDESIGN</p></a>
-			</div>
-		</div>
-		
-		</div>
-		
-		<div class="services row">
-			<div class="four columns alpha">
-			<p><i class="icon-sitemap icon-3x"></i></p>
-			<h4>Product Management</h4>
-			<p><strong>Identify</strong></p>
-			<p>Stategy & Planning</p>
-			</div>
-			
-			<div class="four columns">
-			<p><i class="icon-cogs icon-3x"></i></p>
-			<h4>User Experience</h4>
-			<p><strong>Solve</strong></p>
-			<p>Wireframe & Prototyping</p>
-			</div>
-			
-			<div class="four columns omega">
-			<p><i class="icon-desktop icon-3x"> <i class="icon-tablet"></i></i></p>
-			<h4>Responsive Design</h4>
-			<p><strong>Design</strong></p>
-			<p>Design & Development</p>
-			</div>
-		</div>
-		
-		<br class='clear'>
-		
-	<div id="bottomNav">		
-	<ul >
-		<li><a href="index.html"><i class="icon-home"></i></a></li>
-		<li class="right"><a href="#top"><i class="icon-caret-up"></i></a></li>
-		<!-- <li class="social right"><a href="http://twitter.com/urbildpunkt" target="_blank"><i class="icon-twitter twitter-icon"></i></a></li> -->
-	</ul>	
-	</div>
-	
-	</div><!-- End Main -->
-	
-	
-	<div class="two columns sidebar" id="sidebarRight">
-    <script type="text/javascript" src="//widgets.twimg.com/j/2/widget.js"></script>
-<script type='text/javascript'>
-new TWTR.Widget({
-  version: 2,
-  type: 'profile',
-  rpp: 4,
-  interval: 6000,
-  width: 130,
-  height: 288,
-  theme: {
-    shell: {
-      background: 'transparent',
-      color: '#222'
-    },
-    tweets: {
-      background: 'transparent',
-      color: '#525252',
-      links: '#0766BA'
-    }
-  },
-  features: {
-    scrollbar: false,
-    loop: false,
-    live: false,
-    hashtags: true,
-    timestamp: true,
-    avatars: false,
-    behavior: 'all'
-  }
-}).render().setUser('urbildpunkt').start();
-</script>
-    
+      <section class="top-bar-section">
+        <!-- Left Nav Section -->
+        <ul class="right">
+          <li><a href="about.html"><i class="icon-user nav-icon"></i> About<p class="byline">Resume</p></a></li>
+          <li><a href="work.html"><i class="icon-briefcase nav-icon"></i> Work<p class="byline">Portfolio</p></a></li>
+          <li><a href="labs.html"><i class="icon-beaker nav-icon"></i> Labs<p class="byline">Projects</p></a></li>
+          <li><a href="blog.html"><i class="icon-pencil nav-icon"></i> Blog<p class="byline">Writing</p></a></li>
+          <li><a href="index.html#contact"><i class="icon-envelope-alt nav-icon"></i> Contact<p class="byline">Hire Me!</p></a></li>
+        </ul>
+      </section>   
+    	
+    </nav>
 </div>
-	
-	
-	
-	</div>
-	</div>
-	
-	
-	<!-- Footer -->
+
+<!-- Hero -->
+<div id="heroCanvas" role="main">
+	    <canvas id="respondCanvas" data-processing-sources="javascripts/heroCanvas.js" width="100" height="100"></canvas>
+</div>
+
+<!-- Body -->
+<div class="row" id="content">
+    <!-- Main -->
+    <div id="main">
+        <header id="masthead">
+          <hgroup>
+            <h4>John Quealy</h4>
+          </hgroup>
+          <section>
+            <p>Urbild<b>punkt.</b></p>
+          </section>
+        </header>
+        
+        <br class='clear'>
+        
+        <h5 class="text-center">Featured Work</h5>
+        <ul class="small-block-grid-1 large-block-grid-3 text-center">
+          <li><a href="labs.html#dashboard"><img src="images/project-images/dashboard1.png"></a></li>
+          <li><a href="labs.html#planeshift"><img src="images/project-images/planeshift1.png"></a></li>
+          <li><a href="work.html#camidesign"><img src="images/portfolio-images/camidesign-web.png"></a></li>
+        </ul>
+        
+        <br class="clear">
+         
+        <ul class="small-block-grid-1 large-block-grid-3 text-center">
+          <li><h2><small><i class="icon-sitemap icon-3x"></i></small></h2>
+        	<h5>Product Management</h5>
+			<p><strong>Identify</strong></p>
+			<p>Stategy & Planning</p></li>
+          <li><h2><small><i class="icon-cogs icon-3x"></i></small></h2>
+    		<h5>User Experience</h5>
+			<p><strong>Solve</strong></p>
+			<p>Wireframe & Prototyping</p></li>
+          <li><h2><small><i class="icon-desktop icon-3x"></i><i class="icon-tablet icon-3x"></i></small></h2>
+    		<h5>Responsive Design</h5>
+			<p><strong>Design</strong></p>
+			<p>Design & Development</p></li>
+        </ul>
+        
+        <br class='clear'>
+        
+        <div class="row" style="background: #fff; border-bottom: 1px solid #bfbfbf; height: 5px; margin-bottom:1px;"></div> 
+       
+        <div class="row" style="background: #f5f5f5; outline: 1px solid #f5f5f5;">
+         
+         <br class='clear'>
+         
+         <p class="text-center">Find me on:</p>
+            <ul class="small-block-grid-1 large-block-grid-3 text-center" style="margin: 0 auto">
+                <li>
+        		    <a href="http://gplus.to/jquealy" target="_blank"><p class="button" id="google-plus"><i class="icon-google-plus pull-left icon-border" style="width: auto;"></i> Google+</p></a>
+        		</li>
+                <li>
+        		    <a href="http://twitter.com/jqly" target="_blank"><p class="button" id="twitter"><i class="icon-twitter pull-left icon-border" style="width: auto;"></i> Twitter</p></a>
+        		</li>
+                <li>
+        		    <a href="http://linkedin.com/in/jquealy" target="_blank"><p class="button" id="linkedin"><i class="icon-linkedin pull-left icon-border" style="width: auto;"></i> LinkedIn</p></a>
+        		</li>
+            </ul>
+           </div> 
+       
+        <div class="row" style="border-top: 1px solid #bfbfbf; margin-top:1px;"></div>
+       
+       <a name="contact"></a>
+        
+        <!-- Contact -->
+    <div class="map row">    
+        <ul class="small-block-grid-1 large-block-grid-2"  style="margin: 0 auto">
+            <li class="text-center">
+                <br>
+                <h5>John Quealy <br><small>Available for hire.<br>Willing to relocate.</small></h5>
+                <span class="button-nolink"><i class="icon-map-marker pull-left icon-large" ></i> San Diego, CA</span><br>
+                <a href="&#x20;&#x6d;&#x61;il&#116;o&#58;&#x20;&#x25;&#54;3&#37;&#54;&#102;&#x25;6e%&#x37;4a&#x63;&#37;7&#x34;&#x25;&#x34;&#48;&#x75;rb&#x69;l&#100;p&#117;%&#x36;ek&#x74;&#37;&#50;eco&#x6D;?" target="_blank" class="button"><i class="icon-envelope pull-left icon-border"  style="width: auto;"></i> Email</a><br>
+                <a href="https://clients4.google.com/voice/embed/webCallButton?id=459539a4408c5eb419dd82a429d94c7b1e332697" target="_blank" class="button">
+                <i class="icon-phone pull-left icon-border" style="width: auto;"></i> Call<p class="small"><small>free with Google</small></p></a><br>      
+                <br class='clear'>
+            </li>
+            <li>
+            <br>
+            </li>
+        </ul>		
+	</div>		
+
+        
+        <div class="row">
+            <div id="bottomNav">    	
+            	<ul >
+            		<li><a href="index.html"><i class="icon-home"></i></a></li>
+            		<li class="right"><a href="#top"><i class="icon-caret-up"></i></a></li>
+            	</ul>	
+        	</div>
+       </div> 
+   
+    </div><!-- End Main -->
+    
+    <!-- Sidebar -->
+    <div id="sidebar">
+       <header id="sidemast">
+       <h4 style="font-weight: normal;"><a href="http://twitter.com/urbildpunkt" target="_blank"><small><i class="icon-twitter"></i> Urbild<b>punkt.</b></small></a></h4>
+        </header>
+       
+        <script type="text/javascript" src="//widgets.twimg.com/j/2/widget.js"></script>
+        <script type='text/javascript'>
+        new TWTR.Widget({
+          version: 2,
+          type: 'profile',
+          rpp: 7,
+          interval: 6000,
+          width: 200,
+          height: 700,
+          theme: {
+            shell: {
+              background: 'transparent',
+              color: '#222'
+            },
+            tweets: {
+              background: 'transparent',
+              color: '#525252',
+              links: '#0766BA'
+            }
+          },
+          features: {
+            scrollbar: false,
+            loop: false,
+            live: false,
+            hashtags: true,
+            timestamp: true,
+            avatars: false,
+            behavior: 'all'
+          }
+        }).render().setUser('urbildpunkt').start();
+        </script>
+        
+    </div><!-- End Sidebar -->
+
+
+</div><!-- End Body -->
+
+    <!-- Footer -->
     <footer id="footer">
 		
-		<div class="footing">
-		"Great things are not accomplished by those who yield to trends and fads and popular opinion." - Jack Kerouac
-		</div>
-	
-		<div class="copyright">Urbildpunkt © Copyright 2013 John Quealy</div>
-	
+        <div class="row"> 
+            <div id="footing">
+    		<p class="adquote">"Great things are not accomplished by those who yield to trends and fads and popular opinion." - Jack Kerouac</p>
+    	
+    		<p class="copyright">Urbildpunkt © Copyright 2013 John Quealy</p>
+    	    </div>   
+	    </div>
 	</footer>
 
-<!-- End Document
-================================================== -->
+  <!-- Moar Javascripts
+  ================================================== -->
+  <script>
+  document.write('<script src=' +
+  ('__proto__' in {} ? 'javascripts/vendor/zepto' : 'javascripts/vendor/jquery') +
+  '.js><\/script>')
+  </script>
+  
+  <script src="javascripts/foundation/foundation.js"></script>
+  
+  <script src="javascripts/foundation/foundation.topbar.js"></script>
 
+	
+  
+  <script>
+    $(document).foundation();
+  </script>
+  
+  <!-- End Document
+================================================== -->
 </body>
 </html>

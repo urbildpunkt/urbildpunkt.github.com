@@ -1,142 +1,202 @@
+
 <!DOCTYPE html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
 <head>
-
-	<!-- Basic Page Needs
+    <!-- Basic Page Needs
   ================================================== -->
-	<meta charset="utf-8">
-	<title>Urbildpunkt.</title>
-	<meta name="description" content="">
-	<meta name="author" content="">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Urbildpunkt.</title>
 
-	<!-- Mobile Specific Metas
+    <!-- Mobile Specific Metas
   ================================================== -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-	<!-- CSS
+    <!-- CSS
   ================================================== -->
-	<link rel="stylesheet" href="stylesheets/base.css">
-	<link rel="stylesheet" href="stylesheets/skeleton.css">
-	<link rel="stylesheet" href="stylesheets/layout.css">
-	<link rel="stylesheet" href="stylesheets/font-awesome.min.css">
-
-	<!--[if lt IE 9]>
-		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <link rel="stylesheet" href="stylesheets/normalize.css" />
+  <link rel="stylesheet" href="stylesheets/app.css" />
+  <link rel="stylesheet" href="stylesheets/font-awesome.min.css" />
+  
+  <!--[if lt IE 9]>
+    	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
-
-	<!-- Favicons
-	================================================== -->
+    
+  <!-- Favicons
+    ================================================== -->
 	<link rel="shortcut icon" href="images/favicon.ico">
-	
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	<script type="text/javascript" src="js/processing-1.4.1.min.js"></script>
-	<script type="text/javascript" src="js/scripts.js"></script>
-	 
-		
-
-
+    
+  <!-- Javascripts
+  ================================================== -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="javascripts/vendor/custom.modernizr.js"></script>
+  <script type="text/javascript" src="javascripts/processing-1.4.1.min.js"></script>
+    
 </head>
 <body>
 
+<!-- Primary Page Layout
+    ================================================== -->
 
+<!-- Header -->
+<a name="top"></a>
 
-	<!-- Primary Page Layout
-	================================================== -->
-
-	<!-- Header -->
-	<a name="top"></a>
-
-	<nav class="clearfix">
-		<ul class="clearfix">
-			<li class="name"><a href="index.html">Urbild<span class="secondary">punkt.</span></a></li>
-			<li class="mobile"><a href="index.html"><i class="icon-home nav-icon"></i> Home</a></li>
-			<li><a href="about.html"><i class="icon-user nav-icon"></i> About<p class="byline">Resume</p></a></li>
-			<li><a href="work.html"><i class="icon-briefcase nav-icon"></i> Work<p class="byline">Portfolio</p></a></li>
-			<li><a href="labs.html"><i class="icon-beaker nav-icon"></i> Labs<p class="byline">Projects</p></a></li>
-			<li><a href="blog.html"><i class="icon-pencil nav-icon"></i> Blog<p class="byline">Writing</p></a></li>	
-			<li class="contact"><a href="contact.html"><i class="icon-envelope-alt nav-icon"></i> Contact<p class="byline">Hire Me!</p></a></li>	
-		</ul>
-			<a href="#" id="pull">Urbild<span class="secondary">punkt.</span></a>
-	</nav>
-	
-	
-	<!-- Hero -->
-
-    <div id="heroCanvas" role="main">
-	    <canvas id="respondCanvas" data-processing-sources="js/heroCanvas.js" width="100" height="100"></canvas>
-    </div>
+<div class="row">
+    <nav class="top-bar">
+        
+      <ul class="title-area">
+        <!-- Title Area -->
+        <li class="name active">
+          <h3><a href="index.html">Urbild<strong>punkt.</strong></a></h3>
+        </li>
+        <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+        <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+      </ul>
     
-    
-    <!-- Body -->
-    <div class="container">
-	<div class="row">
-	
-		
-	<div class="two columns sidebar" id="sidebarLeft">
-		<p></p>
-	</div>
-	
-	
-	<div class="twelve columns" id="main">
-		<div class="heading">
-		<h4>Urbild<strong>punkt.</strong></h4>
-		<p style="margin-top: -15px;"><span class="small"><small>Blog</small></span><br><small>Thoughts, Ideas, & Musing</small></p>
-		</div>
-		
-		<br class='clear'>
-		
-	<div class="project row">
-			<div class="four columns alpha projectImage">
-			<a href="#" class="projectImageLink"><img src="images/220x150.gif">
-			<span class="viewMore">+ Read More</span></a>
-			<p class="specs">Date</small></p>
-			</div>
-			
-			<div class="seven columns projectInfo">
-			<h5>Post Title</h5>
-			<p>Description</p>
-			</div>
-	</div>	
-		
+      <section class="top-bar-section">
+        <!-- Left Nav Section -->
+        <ul class="right">
+          <li><a href="about.html"><i class="icon-user nav-icon"></i> About<p class="byline">Resume</p></a></li>
+          <li><a href="work.html"><i class="icon-briefcase nav-icon"></i> Work<p class="byline">Portfolio</p></a></li>
+          <li><a href="labs.html"><i class="icon-beaker nav-icon"></i> Labs<p class="byline">Projects</p></a></li>
+          <li class="active"><a href="blog.html"><i class="icon-pencil nav-icon"></i> Blog<p class="byline">Writing</p></a></li>
+          <li><a href="index.html#contact"><i class="icon-envelope-alt nav-icon"></i> Contact<p class="byline">Hire Me!</p></a></li>
+        </ul>
+      </section>   
+    	
+    </nav>
+</div>
+
+<!-- Hero -->
+<div id="heroCanvas" role="main">
+    <canvas id="respondCanvas" data-processing-sources="javascripts/heroCanvas.js" width="100" height="100"></canvas>
+</div>
+
+<!-- Body -->
+<div class="row" id="content">
+
+<!-- Main -->
+<div id="main">
+    <header id="masthead">
+      <hgroup>
+        <h4>John Quealy</h4>
+        <p class="tagline">Urbild<b>punkt.</b></p>
+      </hgroup>
+      <section>
+        <p>Thoughts, Ideas, & Musings</p>
+      </section>
+    </header>
+        
 	<br class='clear'>
-		
-	<div id="bottomNav">		
-	<ul >
-		<li><a href="index.html"><i class="icon-home"></i></a></li>
-		<li class="right"><a href="#top"><i class="icon-caret-up"></i></a></li>
-		<!-- <li class="social right"><a href="http://twitter.com/urbildpunkt" target="_blank"><i class="icon-twitter twitter-icon"></i></a></li> -->
-	</ul>	
-	</div>
-	
-	</div><!-- End Main -->
-	
-	
-	<div class="two columns sidebar" id="sidebarRight">
-		<p></p>
-	</div>
-	
-	
-	
-	</div>
-	</div>
-	
-	
-	<!-- Footer -->
-    <footer id="footer">
-		
-		<div class="footing">
-		"Great things are not accomplished by those who yield to trends and fads and popular opinion." - Jack Kerouac
-		</div>
-	
-		<div class="copyright">Urbildpunkt © Copyright 2013 John Quealy</div>
-	
-	</footer>
+    
+    <ul class="small-block-grid-1 large-block-grid-2 text-center">
+    <li>
+    <h5 class="text-center">I'm John Quealy, and This is How I Work <br><small>April 2, 2013</small></h5>        
+    <p>I explain the Urbild<b>punkt.</b> name and how I like to work.</p>
+    <p  class="text-center"><a href="how-i-work.html" class="projectImageLink button"><i class="icon-edit pull-left icon-border"  style="width: auto;"></i> Read Post</a></p>   
+    </li>
+     
+    <li>
+    <img src="images/blog-images/how-i-work.png">      
+    </li>
+    </ul>
+                            
 
-<!-- End Document
+	<div class="row" style="padding-bottom: 500px;"></div>
+
+    
+	<br class='clear'>
+	
+    
+    <div class="row">
+        <div id="bottomNav">    	
+        	<ul >
+        		<li><a href="index.html"><i class="icon-home"></i></a></li>
+        		<li class="right"><a href="#top"><i class="icon-caret-up"></i></a></li>
+        	</ul>	
+    	</div>
+   </div> 
+
+</div><!-- End Main -->
+
+<!-- Sidebar -->
+<div id="sidebar">
+   <header id="sidemast">
+        <h4 style="font-weight: normal;"><a href="http://twitter.com/urbildpunkt" target="_blank"><small><i class="icon-twitter"></i> Urbild<b>punkt.</b></small></a></h4>
+    </header>
+   
+    <script type="text/javascript" src="//widgets.twimg.com/j/2/widget.js"></script>
+    <script type='text/javascript'>
+    new TWTR.Widget({
+      version: 2,
+      type: 'profile',
+      rpp: 7,
+      interval: 6000,
+      width: 200,
+      height: 700,
+      theme: {
+        shell: {
+          background: 'transparent',
+          color: '#222'
+        },
+        tweets: {
+          background: 'transparent',
+          color: '#525252',
+          links: '#0766BA'
+        }
+      },
+      features: {
+        scrollbar: false,
+        loop: false,
+        live: false,
+        hashtags: true,
+        timestamp: true,
+        avatars: false,
+        behavior: 'all'
+      }
+    }).render().setUser('urbildpunkt').start();
+    </script>
+    
+</div><!-- End Sidebar -->
+
+
+</div><!-- End Body -->
+
+    <!-- Footer -->
+<footer id="footer">
+		
+    <div class="row"> 
+        <div id="footing">
+		<p class="adquote">"Great things are not accomplished by those who yield to trends and fads and popular opinion." - Jack Kerouac</p>
+	
+		<p class="copyright">Urbildpunkt © Copyright 2013 John Quealy</p>
+	    </div>   
+    </div>
+</footer>
+
+  <!-- Moar Javascripts
+  ================================================== -->
+  <script>
+  document.write('<script src=' +
+  ('__proto__' in {} ? 'javascripts/vendor/zepto' : 'javascripts/vendor/jquery') +
+  '.js><\/script>')
+  </script>
+  
+  <script src="javascripts/foundation/foundation.js"></script>
+  
+  <script src="javascripts/foundation/foundation.topbar.js"></script>
+
+	
+  
+  <script>
+    $(document).foundation();
+  </script>
+  
+  <!-- End Document
 ================================================== -->
-
 </body>
 </html>

@@ -1,0 +1,132 @@
+---
+title: 'john@urbildpunkt.com'
+---
+
+header#site-header 
+	div#topbar
+		div#masthead
+			div#masthead-title
+				a[href="/"] 
+					h1  
+						| John Quealy<small class="muted">/</small>
+						span.tagline
+							| urbildpunkt
+			aside#masthead-aside
+				nav#site-nav
+					ul
+						li.current
+							a[href="/" alt="Portfolio"] 
+								| <i class="fa fa-fw fa-briefcase"></i>
+								<br><span class="label"> Work</span>
+						li 
+							a[href="/" alt="About Me"] 
+								| <i class="fa fa-fw fa-user"></i>
+								<br><span class="label"> About</span>
+						li 
+							a[href="https://docs.google.com/document/d/1O7PHnque2QVbyun5g8GyGLghBjGv77NoOJ2Ja705Xu4/edit?usp=sharing" alt="Resume" target="_blank"] 
+								| <i class="fa fa-fw fa-file-text"></i>
+								<br><span class="label"> Resume</span>
+	div#hero
+		h1 
+			| I am a <strong id="dynamo">storyteller.</strong>
+		h2 
+			| Focused on <strong>UX/UI</strong> and <strong>interaction</strong>.		
+
+
+div.project-listings
+	h1
+		| Latest 
+		span.subheader 
+			| / Freelance
+
+section.latest-listings
+		- data.latest_projects.each do |p|
+			article.latest-listing
+				div.project-image
+					a href=p["image-url"]
+						= image_tag p["image"], :alt => p["title"]
+				div.project-content
+					div.project-title
+						a href=p["url"] target=p["url-target"]
+							h2 = p["title"]
+
+					span.project-date = p["date"]
+
+					p.project-description = p["description"]
+
+					ul.tags
+				      - p["tags"].each do |t|
+				      	li.small = t
+
+div.project-listings
+	h1 
+		| Featured 
+		span.subheader 
+			| / Concepts
+
+section.featured-listings
+		- data.featured_projects.each do |p|
+			article.featured-listing
+				div.project-image
+					a href=p["url"] target=p["url-target"]
+						= image_tag p["image"], :alt => p["title"]
+				div.project-content
+					div.project-title
+						a href=p["url"] target=p["url-target"]
+							h2 = p["title"]
+
+					span.project-date = p["date"]
+
+					p.project-description = p["description"]
+
+					ul.tags
+				      - p["tags"].each do |t|
+				      	li.small = t
+
+div.project-listings
+	h1 
+		| Clients 
+		span.subheader 
+			| / Contract Work
+
+section.client-listings
+		- data.client_projects.each do |p|
+			article.client-listing
+				div.project-image
+					a href=p["url"] target=p["url-target"]
+						= image_tag p["image"], :alt => p["title"]
+				div.project-content
+					div.project-title
+						a href=p["url"] target=p["url-target"]
+							h2 = p["title"]
+
+					span.project-date = p["date"]
+
+					p.project-description = p["description"]
+
+					ul.tags
+				      - p["tags"].each do |t|
+				      	li.small = t
+
+footer#site-footer
+	div#inner-footer
+		div#copyright
+			p
+				| <smalL>&copy; 2014</small> urbildpunkt 
+				small.muted 
+					| / John Quealy
+
+		nav#social-nav
+			ul
+				li 
+					a.hire-me
+						| <i class="fa fa-fw fa-envelope"></i>
+				li#twitter
+					a[href="https://twitter.com/urbildpunkt" alt="Twitter" target="_blank"] 
+						| <i class="fa fa-fw fa-twitter"></i>
+				li#google-plus 
+					a[href="https://www.google.com/+JohnQuealy" alt="Google+" target="_blank"] 
+						| <i class="fa fa-fw fa-google-plus"></i>
+				li#linked-in 
+					a[href="http://www.linkedin.com/in/jquealy/" alt="LinkedIn" target="_blank"] 
+						| <i class="fa fa-fw fa-linkedin"></i>

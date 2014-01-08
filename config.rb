@@ -4,8 +4,8 @@
 
 # Meta.
 set :meta, {
-  title: 'Foo',
-  url: 'http://foo.com',
+  title: 'Urbildpunk',
+  url: 'http://urbildpunkt.com',
 }
 
 # Syntax highlighting.
@@ -82,5 +82,5 @@ configure :build do
   activate :minify_html, remove_input_attributes: false
   activate :minify_css
   activate :minify_javascript
-  activate :imageoptim
+  #activate :imageoptim
 end

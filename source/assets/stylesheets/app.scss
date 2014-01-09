@@ -278,6 +278,7 @@ tbody tr:nth-child(odd) th {
 
 #masthead {
 	@include outer-container();
+	padding: 0 10px;
 }
 
 #masthead-title {
@@ -291,6 +292,7 @@ tbody tr:nth-child(odd) th {
 
 	h1 {
 		display: block;
+		min-width: 130px;
 		font-size: 1.25rem;
 		@include transition (all .3s linear);
 
@@ -397,6 +399,7 @@ tbody tr:nth-child(odd) th {
 	padding: 140px 0 80px 0;
 	h1 {
 		display: inline-block;
+		min-width: 300px;
 		color: $primary;
 	}
 
@@ -408,6 +411,11 @@ tbody tr:nth-child(odd) th {
 
 .project-listings, .latest-listings, .featured-listings, .client-listings {
 	@include outer-container();
+	padding-left: 10px;
+
+	@include media(1030px) {
+		padding: 0;
+	}
 }
 
 .project-listings {
@@ -552,7 +560,7 @@ tbody tr:nth-child(odd) th {
 
 #inner-footer {
 	@include outer-container;
-	padding: 15px 0;
+	padding: 15px 10px;
 }
 
 #copyright {

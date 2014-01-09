@@ -19,8 +19,8 @@ html.nojs
 
     / Place favicon.ico and apple-touch-icon.png in the root directory.
 
-    = stylesheet_link_tag 'app'
-    = stylesheet_link_tag '//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css'
+    == stylesheet_link_tag 'app'
+    == stylesheet_link_tag '//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css'
 
   body
     /[if lte IE 7]
@@ -32,9 +32,9 @@ html.nojs
 
     == yield
 
-    = javascript_include_tag '//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'
-    = javascript_include_tag 'http://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.0.4/jquery.imagesloaded.min.js'
-    = javascript_include_tag 'dynamo.min'
-    = javascript_include_tag 'headroom'
-    = javascript_include_tag 'jquery.fluidbox.min.js'
-    = javascript_include_tag 'app'
+    == javascript_include_tag '//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'
+    == javascript_include_tag 'http://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.0.4/jquery.imagesloaded.min.js'
+    == javascript_include_tag 'dynamo.min'
+    == javascript_include_tag 'headroom'
+    == javascript_include_tag 'jquery.fluidbox.min.js'
+    == javascript_include_tag 'app'

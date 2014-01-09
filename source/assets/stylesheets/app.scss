@@ -411,7 +411,12 @@ tbody tr:nth-child(odd) th {
 
 .project-listings, .latest-listings, .featured-listings, .client-listings {
 	@include outer-container();
-	padding-left: 10px;
+	padding: 0 10px;
+
+	@include media(768px) {
+		padding: 0;
+		padding-left: 10px;
+	}
 
 	@include media(1030px) {
 		padding: 0;

@@ -1,9 +1,9 @@
 - title: 'Ghostwire: News'
-  image: projects/ghostwire-news.png
-  image-url: assets/images/projects/ghostwire-news_full.png
-  url: http://ghostwire.apps.runkite.com/
-  url-target: _blank
-  date: Nov - Dec 2013
+  image: 'projects/ghostwire-news.png'
+  image-url: 'assets/images/projects/ghostwire-news_full.png'
+  url: 'http://ghostwire.apps.runkite.com/'
+  url-target: '_blank'
+  date: 'Nov - Dec 2013'
   description: | 
     A magazine-style <a href="http://ghost.org/ghost" target="_blank">ghost</a> theme perfect for any news or editorial blog. It was built mobile-first to be fully responsive and features a clean design, allowing for your content to take the spotlight.
   tags: 
@@ -11,11 +11,11 @@
       - documentation
 
 - title: 'Worldcoin Logo'
-  image: projects/worldcoin-logo.png
-  image-url: projects/worldcoin-logo.png
+  image: 'projects/worldcoin-logo.png'
+  image-url: 'projects/worldcoin-logo.png'
   url: 
-  url-target: _self
-  date: November 2013
+  url-target: '_self'
+  date: 'November 2013'
   description: | 
     A logo design idea submitted to the Worldcoin cryptocurrency as part of an exploratory design challenge. It was designed to be simple and scalable, following the style of other popular cryptocoins.
   tags: 
@@ -23,22 +23,22 @@
       - logo
 
 - title: 'Metro Design Prototype'
-  image: projects/metro.png
-  image-url: projects/metro.png
-  url: http://jquealy.com/labs/Metro/index.html
-  url-target: _blank
-  date: September 2013
+  image: 'projects/metro.png'
+  image-url: 'assets/images/projects/metro_full.png'
+  url: 'https://dl.dropboxusercontent.com/u/1549509/themes/metro/index.html'
+  url-target: '_blank'
+  date: 'September 2013'
   description: | 
     A working prototype theme based on the Microsoft Windows Modern UI design language formally known as Metro.
   tags:
       - prototype
 
 - title: 'Inkfish Themes'
-  image: projects/inkfish-a.png
-  image-url: projects/inkfish-a.png
-  url: http://jquealy.com/themes/inkfish-australis/
-  url-target: _blank
-  date: Jan - July 2013
+  image: 'projects/inkfish-a.png'
+  image-url: 'assets/images/projects/inkfish-a_full.png'
+  url: 'https://dl.dropboxusercontent.com/u/1549509/themes/inkfish-australis/index.html'
+  url-target: '_blank'
+  date: 'Jan - July 2013'
   description: | 
     Inkfish, a series of responsive portfolio themes made to be easily customizable with a flat file content management system built-in.
   tags:

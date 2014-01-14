@@ -1,8 +1,9 @@
 - title: 'camiDESIGN'
-  image: projects/camidesign.png
-  url: http://ghostwire.apps.runkite.com/
-  url-target: _blank
-  date: 2011 - 2012
+  image: 'projects/camidesign.png'
+  image-url: 'assets/images/projects/camidesign_full.png'
+  url: 'http://camidesign.com/'
+  url-target: '_blank'
+  date: '2011 - 2012'
   description: | 
     I was responsible for designing and developing products for the company and its clients. These products included websites, presentations and marketing materials.
   tags: 
@@ -12,10 +13,11 @@
       - Flash
 
 - title: 'Recycle Your Autos'
-  image: projects/recycle.png
+  image: 'projects/recycle.png'
+  image-url: 'assets/images/projects/recycle_full.png'
   url: 
-  url-target: _self
-  date: 2011 - 2012
+  url-target: '_self'
+  date: '2011 - 2012'
   description: | 
     I was in charge of redesigning and developing a mobile-ready, fully responsive website that still included a Flash intro. It was also necessary for the website to be bilingual.
   tags: 
@@ -24,10 +26,11 @@
       - Flash
 
 - title: 'Dancing DJ Productions'
-  image: projects/dancing-dj.png
+  image: 'projects/dancingdj.png'
+  image-url: 'assets/images/projects/dancingdj_full.png'
   url: 
-  url-target: _self
-  date: 2012
+  url-target: '_self'
+  date: '2012'
   description: | 
     I was tasked with developing an alternative landing page to the Flash based website for mobile users, prioritizing the essential information necessary.
   tags:

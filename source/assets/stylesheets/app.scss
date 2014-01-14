@@ -448,7 +448,14 @@ tbody tr:nth-child(odd) th {
 
 .project-title {
 	h2 {
+		font-weight: normal;
 		border-bottom: 2px solid $accent;
+	}
+
+	a {
+		h2 {
+			font-weight: 700;
+		}
 	}
 
 	a:hover {

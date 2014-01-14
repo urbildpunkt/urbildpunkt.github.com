@@ -1,21 +1,24 @@
 - title: 'Starcraft II WCS'
-  image: projects/starcraft.png
+  image: 'projects/starcraft.png'
+  image-url: 'assets/images/projects/starcraft_full.png'
   url: 
-  url-target: _blank
-  date: June 2013
+  url-target: '_blank'
+  date: 'June 2013'
   description: | 
-    A magazine-style <a href="http://ghost.org/ghost" target="_blank">ghost</a> theme perfect for any news or editorial blog. It was built mobile-first to be fully responsive and features a clean design, allowing for your content to take the spotlight.
+    A conceptual redesign of the Starcraft II World Championship Series.
   tags: 
-      - blog theme
-      - documentation
+      - conceptual
+      - prototype
+      - user interface
 
 - title: 'Google X/Y: Dashboard'
-  image: projects/google-xy.png
-  url: https://dl.dropboxusercontent.com/u/1549509/website-designs/blog-style/urbildpunkt_old/google.html
-  url-target: _blank
-  date: Spring 2012
+  image: 'projects/google-xy.png'
+  image-url: 'assets/images/projects/google-xy_full.png'
+  url: 'https://dl.dropboxusercontent.com/u/1549509/website-designs/blog-style/urbildpunkt_old/google.html'
+  url-target: '_blank'
+  date: 'Spring 2012'
   description: | 
-    A speculative design project exploring Google's place in the Internet of Things; based around Bruce Sterling’s ideas of the SPIME, “a location-aware, environment-aware, self-logging, self-documenting, uniquely identified object.”
+    A speculative design project exploring Google's place in the Internet of Things; based around Bruce Sterling’s ideas of the SPIME, “a location-aware, environment-aware, self-logging, self-documenting, uniquely identified object." <ul><li>Executed the design of a future product from theoretical concept to high-fidelity prototype.</li> <li>Organized and guided the class’ product presentations, critiques and discussions.</li> <li>Managed development of the class project website in accordance with Google’s design language.</li></ul>
   tags: 
       - conceptual
       - prototype
@@ -23,10 +26,11 @@
       - web design
 
 - title: 'Planeshift MMORPG GUI'
-  image: projects/planeshift.png
+  image: 'projects/planeshift.png'
+  image-url: 'assets/images/projects/planeshift_full.png'
   url: 
-  url-target: _self
-  date: 2008 - 2009
+  url-target: '_self'
+  date: '2008 - 2009'
   description: | 
     A conceptual user interface and website redesign that I created for the free, open source, and cross-platform massively multiplayer online game PlaneShift during my short stint on the development team. While it never officially made it into the game, I did develop a working mod version at the time. 
   tags:

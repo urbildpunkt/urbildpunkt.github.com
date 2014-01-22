@@ -75,7 +75,6 @@ end
 
 configure :build do
   activate :relative_assets
-  activate :directory_indexes
   activate :asset_hash
 
   # Ensmallen assets

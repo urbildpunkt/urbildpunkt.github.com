@@ -1,5 +1,6 @@
 ---
 title: 'John Quealy'
+page: 'work'
 ---
 
 - content_for :hero do
@@ -17,26 +18,26 @@ div.project-listings
 			| / Freelance
 
 section.latest-listings
-		- data.latest_projects.each do |p|
-			article.latest-listing
-				div.project-image
-					a href=p["image-url"]
-						= image_tag p["image"], :alt => p["title"]
-				div.project-content
-					div.project-title
-						- if p["url"]
-							a href=p["url"] target=p["url-target"]
-								h2 = p["title"]
-						- else
+	- data.latest_projects.each do |p|
+		article.latest-listing
+			div.project-image
+				a href=p["image-url"]
+					= image_tag p["image"], :alt => p["title"]
+			div.project-content
+				div.project-title
+					- if p["url"]
+						a href=p["url"] target=p["url-target"]
 							h2 = p["title"]
+					- else
+						h2 = p["title"]
 
-					span.project-date = p["date"]
+				span.project-date = p["date"]
 
-					p.project-description = p["description"]
+				p.project-description = p["description"]
 
-					ul.tags
-				      - p["tags"].each do |t|
-				      	li.small = t
+				ul.tags
+			      - p["tags"].each do |t|
+			      	li.small = t
 
 div.project-listings
 	h1 
@@ -45,26 +46,26 @@ div.project-listings
 			| / Concepts
 
 section.featured-listings
-		- data.featured_projects.each do |p|
-			article.featured-listing
-				div.project-image
-					a href=p["image-url"]
-						= image_tag p["image"], :alt => p["title"]
-				div.project-content
-					div.project-title
-						- if p["url"]
-							a href=p["url"] target=p["url-target"]
-								h2 = p["title"]
-						- else
+	- data.featured_projects.each do |p|
+		article.featured-listing
+			div.project-image
+				a href=p["image-url"]
+					= image_tag p["image"], :alt => p["title"]
+			div.project-content
+				div.project-title
+					- if p["url"]
+						a href=p["url"] target=p["url-target"]
 							h2 = p["title"]
+					- else
+						h2 = p["title"]
 
-					span.project-date = p["date"]
+				span.project-date = p["date"]
 
-					p.project-description = p["description"]
+				p.project-description = p["description"]
 
-					ul.tags
-				      - p["tags"].each do |t|
-				      	li.small = t
+				ul.tags
+			      - p["tags"].each do |t|
+			      	li.small = t
 
 div.project-listings
 	h1 
@@ -73,26 +74,26 @@ div.project-listings
 			| / Contract Work
 
 section.client-listings
-		- data.client_projects.each do |p|
-			article.client-listing
-				div.project-image
-					a href=p["image-url"]
-						= image_tag p["image"], :alt => p["title"]
-				div.project-content
-					div.project-title
-						- if p["url"]
-							a href=p["url"] target=p["url-target"]
-								h2 = p["title"]
-						- else
+	- data.client_projects.each do |p|
+		article.client-listing
+			div.project-image
+				a href=p["image-url"]
+					= image_tag p["image"], :alt => p["title"]
+			div.project-content
+				div.project-title
+					- if p["url"]
+						a href=p["url"] target=p["url-target"]
 							h2 = p["title"]
+					- else
+						h2 = p["title"]
 
-					span.project-date = p["date"]
+				span.project-date = p["date"]
 
-					p.project-description = p["description"]
+				p.project-description = p["description"]
 
-					ul.tags
-				      - p["tags"].each do |t|
-				      	li.small = t
+				ul.tags
+			      - p["tags"].each do |t|
+			      	li.small = t
 
 footer#site-footer
 	div#inner-footer

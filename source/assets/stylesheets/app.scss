@@ -254,6 +254,13 @@ tbody tr:nth-child(odd) th {
 	border-bottom: 2px solid $accent;
 }
 
+#about #site-header {
+	background: #e7e7e7 url(/assets/images/header-about.png);
+	background-size: cover;
+	border-bottom: 2px solid $accent;
+}
+
+
 #topbar {
 	background: rgba(255,255,255,0.8);
 	border-bottom: 2px solid $accent;
@@ -284,6 +291,10 @@ tbody tr:nth-child(odd) th {
 #masthead-title {
 	text-align: center;
 	padding-left: 15px;
+
+	a:hover {
+		text-decoration: none;
+	}
 
 	@include media(768px) {
 	    float: left;
@@ -375,22 +386,24 @@ tbody tr:nth-child(odd) th {
 			}
 		}
 	}
+}
 
-	li.current {
-		a {
-			color: $primary;
-			border-bottom: 2px solid $primary;
+#work #site-nav li#work-link, #about #site-nav li#about-link {
 
-			.label {
-				color: $primary;
-			}
-		}
-		a:hover {
+	a {
+		color: $primary;
+		border-bottom: 2px solid $primary;
+
+		.label {
 			color: $primary;
-			text-decoration: none;
-			background: #e7e7e7;
-			border-bottom: 2px solid $secondary;
 		}
+	}
+	
+	a:hover {
+		color: $primary;
+		text-decoration: none;
+		background: #e7e7e7;
+		border-bottom: 2px solid $secondary;
 	}
 }
 
@@ -406,6 +419,32 @@ tbody tr:nth-child(odd) th {
 	h2 {
 		font-size: 1rem;
 		color: $secondary;		
+	}
+}
+
+.container {
+	@include outer-container();
+
+	h1 {
+		font-size: 1.5rem;
+		margin: 1rem 0;
+		border-bottom: 2px solid $secondary;
+	}
+}
+
+.inner-container {
+	@include row();
+	@include span-columns(10);
+	@include shift(1);
+}
+
+.row {
+	@include row();
+}
+
+.left, .right {
+	@include media(768px) {
+		@include span-columns(5 of 10);
 	}
 }
 
@@ -509,7 +548,6 @@ tbody tr:nth-child(odd) th {
 	}
 }
 
-
 .latet-listing {
 	@include span-columns(12);
 	background: #fff;
@@ -530,6 +568,7 @@ tbody tr:nth-child(odd) th {
 
 	}
 }
+
 .featured-listing {
 	@include span-columns(12);
 	background: #fff;

@@ -1,0 +1,26 @@
+- title: 'Wearable Seizure Monitor'
+  image: 'projects/seizure-monitor.png'
+  image-url: 'assets/images/projects/seizure-monitor_full.png'
+  url: 
+  url-target: '_blank'
+  date: '2011 - 2012'
+  description: | 
+    Using a homemade arduino programmed with a gps and accelerometer sensor, I prototyped a discrete, wearable device that could detect the motions of a grand mal seizure and call out for help at a time when the wearer himself could not, hopefully bringing back a sense of security and independence.
+
+- title: 'Digital Wind Chime'
+  image: 'projects/digital-wind-chime.png'
+  image-url: 'assets/images/projects/digital-wind-chime_full.png'
+  url: 
+  url-target: '_blank'
+  date: '2011 - 2012'
+  description: | 
+    A physical wind chime that reacted instead to “digital wind.” A lot of the focus was put on the aesthetic, I wanted to create an “appliance-like” device that would feel at home on a desk in the same way that a nice clock might.
+
+- title: 'Internet as the Public Sphere'
+  image: 'projects/senior-project.png'
+  image-url: 'assets/images/projects/senior-project_full.png'
+  url: 
+  url-target: '_self'
+  date: '2011 - 2012'
+  description: | 
+    For my senior project, I chose to create a Mozilla Popcorn-based “hypervideo” exploring the relationship between social media and politics through the events of the Egyptian revolution that began on the 25 of January, 2011. <p>I was asked to present the final product at the 2012 Best of ICAM presentation.</p>

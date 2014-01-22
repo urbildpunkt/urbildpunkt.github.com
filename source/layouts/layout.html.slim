@@ -12,7 +12,7 @@ html.nojs
     = stylesheet_link_tag 'app'
     = stylesheet_link_tag '//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css'
 
-  body
+  body [id = current_page.data.page]
     /[if lte IE 7]
       / Ancient browser notice.
       p.browsehappy

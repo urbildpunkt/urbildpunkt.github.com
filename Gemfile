@@ -13,3 +13,6 @@ gem "middleman-deploy" # GitHub Pages deployment
 gem "middleman-livereload"
 gem "middleman-minify-html"
 gem "middleman-imageoptim"
+
+gem 'execjs'
+gem 'therubyracer'

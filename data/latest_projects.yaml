@@ -25,7 +25,7 @@
 - title: 'Metro Design Prototype'
   image: 'projects/metro.png'
   image-url: 'assets/images/projects/metro_full.png'
-  url: 'https://dl.dropboxusercontent.com/u/1549509/themes/metro/index.html'
+  url: 'http://urbildpunkt.com/static/metro/'
   url-target: '_blank'
   date: 'September 2013'
   description: | 
@@ -36,7 +36,7 @@
 - title: 'Inkfish Themes'
   image: 'projects/inkfish-a.png'
   image-url: 'assets/images/projects/inkfish-a_full.png'
-  url: 'https://dl.dropboxusercontent.com/u/1549509/themes/inkfish-australis/index.html'
+  url: 'http://urbildpunkt.com/static/inkfish-australis/'
   url-target: '_blank'
   date: 'Jan - July 2013'
   description: | 

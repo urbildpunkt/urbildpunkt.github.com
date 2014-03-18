@@ -1,0 +1,25 @@
+---
+title: 'John Quealy | About'
+introTitle: 'StarCraft II'
+introTagline: 'World Championship Series Redesign'
+---
+
+- content_for :head do
+  :css
+      header, .headroom, .headroom--pinned, .headroom:hover { background: #09131e url('assets/images/starcraft/sketch.png') no-repeat center 50px;}
+
+
+.page-content
+  .image-content
+    .content-image.one
+    .content-image.two
+  .text-content
+    %p Since the video player is a main point of focus for visitors, I wanted to explore also making it a main point of focus for navigation and content. I created a sidebar panel that allows the viewer to access relevant information or browse for additional content without interrupting the display of the video.
+    %p For example, the video section of this panel can be used to display a “scorecard” for the currently playing live feed, which also shows schedule information for what is coming up next (and would instead show a fuller schedule if there isn’t currently a live video in progress). 
+    %p From this section the viewer can also tab to easily browse a catalogue of featured videos, as well as, on demand content. For the On Demand tab, I put a dropdown arrow to suggest that this content could also be filtered by source, such as official WCS content versus that from a particular community like Day9TV. The panel sections could also be used for community content, giving certain partners there own dedicated panel section on the button navigation (perhaps even for a fee).
+    %p The sidebar panel is also collapsible, sliding out of the way to allow for a wider view of the video player, except for the buttons which remain visible for quick access.
+    %p.content Another benefit to building a robust video player is that it creates an interface that is easily transferable to a tablet device. The large sidebar buttons and sliding layout are particularly tablet/touch-friendly, and if the design were responsive it would serve more like a web app, functional and familiar across all screens.  
+
+.image-row
+  %h2 Final Design
+  = image_tag 'starcraft/sketch-app.png' 

@@ -1,0 +1,25 @@
+%header
+  .nav-bar
+    .nav-wrap
+      %a.logo{href: "/"} John Quealy
+      %a#nav-toggle.closed
+        %i.fa.fa-fw.fa-lg.fa-bars
+        %i.fa.fa-fw.fa-lg.fa-times
+        Menu
+      %nav.nav-collapse
+        %ul
+          %li{ is_page_active('/work.html') }
+            %a{href: "/work.html"}
+              %i.fa.fa-briefcase
+              Portfolio
+          %li{ is_page_active('/about.html') }
+            %a{href: "/about.html"}
+              %i.fa.fa-user
+              About
+          %li
+            %a{href: "https://docs.google.com/document/d/1VlgMYpnDPGFKPt2UF2EfxD6fKvKuu3yw8Wy0Uh9kmDE/edit?usp=sharing", target: "_blank"}
+              %i.fa.fa-file-text
+              Resume
+  %div.intro            
+    %h1= data.introTitle 
+    %p= data.introTagline

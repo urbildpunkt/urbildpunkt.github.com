@@ -1,0 +1,22 @@
+---
+title: 'John Quealy | Portfolio'
+introTitle: 'My Portfolio'
+introTagline: 'of Featured Work'
+---
+
+- content_for :head do
+  :css
+      header, .headroom, .headroom--pinned, .headroom:hover { background: #0088cc;}
+
+%ul.featured
+  - data.projects.each do |p|
+    %li.project-row{:class => p['slug']}
+      %div.project
+        %div.project-image
+          %a{href: p['url'], target: p['url-target']}
+        %div.project-info
+          %a{href: p['url'], target: p['url-target']}
+            %h3.project-title=  p["title"]
+          %p= p['description']
+
+

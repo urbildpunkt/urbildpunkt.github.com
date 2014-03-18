@@ -1,0 +1,39 @@
+---
+title: 'John Quealy'
+introTitle: 'Hello'
+introTagline: 'I am a user experience designer.'
+---
+
+- content_for :head do
+  :css
+      header, .headroom, .headroom--pinned, .headroom:hover { background: #0088cc;}
+
+
+.services
+  .service
+    %h2
+      %i.fa.fa-fw.fa-2x.fa-cloud
+      Think
+  .service
+    %h2
+      %i.fa.fa-fw.fa-2x.fa-edit
+      Design
+  .service
+    %h2
+      %i.fa.fa-fw.fa-2x.fa-laptop
+      Code
+
+.front-page
+  %ul.boxes
+    %li.box.ghostwire
+      %div.box-image
+        %a{href: "http://urbildpunkt.com/ghostwire/", target: "_blank"}
+          %span.project-title Ghostwire: News
+    %li.box.starcraft-wcs
+      %div.box-image
+        %a{href: "/starcraft.html"}
+          %span.project-title StarCraft II WCS
+    %li.box.google-xy
+      %div.box-image
+        %a{href: "http://urbildpunkt.com/static/googlexy/", target: "_blank"}
+          %span.project-title Google X/Y: Dashboard

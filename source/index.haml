@@ -1,39 +1,54 @@
 ---
-title: 'John Quealy'
-introTitle: 'Hello'
-introTagline: 'I am a user experience designer.'
+title: "John Quealy"
+introTitle: "Hello, I'm John Quealy."
+introTagline: "I plan, design, and create experiences."
 ---
 
 - content_for :head do
   :css
-      header, .headroom, .headroom--pinned, .headroom:hover { background: #0088cc;}
+      header { background: url('/assets/images/stardust.png'); 
+        animation: animatedBackground 90s linear infinite;
+        -ms-animation: animatedBackground 90s linear infinite;
+        -moz-animation: animatedBackground 90s linear infinite;
+        -webkit-animation: animatedBackground 90s linear infinite;
+      }
+.services-row
+  .services
+    .service
+      .service-icon.service-icon-1
+        %i.fa.fa-2x.fa-cloud
+      .service-content
+        %h2 Strategy
+        %p Information Architecture
+    .service
+      .service-icon.service-icon-2
+        %i.fa.fa-2x.fa-edit
+      .service-content
+        %h2 Design
+        %p UX / UI & Web Design
+    .service
+      .service-icon.service-icon-3
+        %i.fa.fa-2x.fa-laptop
+      .service-content
+        %h2 Code
+        %p Front-End Development
 
-
-.services
-  .service
-    %h2
-      %i.fa.fa-fw.fa-2x.fa-cloud
-      Think
-  .service
-    %h2
-      %i.fa.fa-fw.fa-2x.fa-edit
-      Design
-  .service
-    %h2
-      %i.fa.fa-fw.fa-2x.fa-laptop
-      Code
 
 .front-page
-  %ul.boxes
-    %li.box.ghostwire
-      %div.box-image
-        %a{href: "http://urbildpunkt.com/ghostwire/", target: "_blank"}
-          %span.project-title Ghostwire: News
-    %li.box.starcraft-wcs
-      %div.box-image
-        %a{href: "/starcraft.html"}
-          %span.project-title StarCraft II WCS
-    %li.box.google-xy
-      %div.box-image
-        %a{href: "http://urbildpunkt.com/static/googlexy/", target: "_blank"}
-          %span.project-title Google X/Y: Dashboard
+  .grid-items
+    %a.grid-item.ghostwire{href: "http://urbildpunkt.com/ghostwire/", target: "_blank"}
+      .grid-item-content
+        %i.fa.fa-3x.fa-rss
+        %h1 Ghostwire: News
+        %p Ghost Blog Theme
+    %a.grid-item.starcraft-wcs{href: "/starcraft.html"}
+      .grid-item-content
+        %i.fa.fa-3x.fa-play-circle
+        %h1 StarCraft II WCS
+        %p UX / UI Design
+    %a.grid-item.google-xy{href: "http://urbildpunkt.com/static/googlexy/", target: "_blank"}
+      .grid-item-content
+        %i.fa.fa-3x.fa-dashboard
+        %h1 Google X/Y: Dashboard
+        %p UX / UI / Web & Mobile Design
+

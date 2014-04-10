@@ -1,34 +1,74 @@
+body {
+  margin: 0 auto;
+}
+
+.services-row {
+  margin-bottom: 3em;
+  background: #F5F5F5;
+  border-top: 2px solid $light-gray;
+}
+
 .services {
-  @include outer-container;
-  text-align: center;
-  margin-bottom: 2em;
+  $icon-service-size: 4em;
+
+  @include outer-container();
+  overflow: auto;
+  margin-bottom: $base-line-height;
 
   .service {
-    @include span-columns(4);
-    @include omega(3n);
-    @include transition (all .1s ease-in-out);
-    color: $color-gray-dark;
-
-    h2 {
-      @extend %c-h4;
-      font-weight: normal;
-      padding-bottom: 1em;
-      border-bottom: 2px solid $color-gray-light;
-    }
-
-
-    p {
-      width: 100%;
-      color: $color-gray-dark;
-      padding-top: 1em;
-      border-top: 2px solid $color-gray-light;
-    }
-
-    i {
-      color: $color-gray-dark;
+    padding-left: 20%;
+    @include media($bp-medium) {
+      @include span-columns(4);
+      @include omega(3n);
+      padding-left: 2em;
     }
   }
+
+
+  .service-icon {
+    float: left;
+    color: white;
+    background: $base-accent-color;
+    margin-top: 1em;
+    border-radius: 50%;
+    width: $icon-service-size;
+    height: $icon-service-size;
+  }
+
+  .service-icon-1 {
+    background: $base-accent-color;
+    padding: 1em;
+  }
+
+  .service-icon-2 {
+    background: adjust-hue($base-accent-color, -50);
+    padding: 1.1em;
+  }
+
+  .service-icon-3 {
+    background: adjust-hue($base-accent-color, -140);
+    padding: .9em;
+  }
+
+  .service-content {
+    margin-left: $icon-service-size *1.4;
+    margin-bottom: 2em;
+  }
+
+  h2 {
+    font-size: $icon-service-size /2.5;
+    padding-top: $icon-service-size /4;
+    margin-bottom: .2em;
+    display: inline-block;
+  }
+
+  p {
+    color: $medium-gray;
+    font-size: 75%;
+    font-weight: 700;
+  }
 }
+
 
 // Home 
 
@@ -38,78 +78,106 @@
   margin-bottom: 2em;
 }
 
-.boxes {
-  margin: 0 auto;
-  padding: 0;
+
+@mixin grid-item-columns($columns) {
+  width: (100% / 12) * $columns;
 }
 
-.box {
-  overflow: hidden;
-    position: relative;
-    margin-bottom:  1.5em;
-    background: #F5F5F5;
-    @include transition (all .2s ease-in-out);
+.grid-items {
+  $grid-items-background: $base-body-color;
+  $grid-item-background: desaturate($base-accent-color, 30); 
+  $grid-item-border-size: 9px;
+  $grid-item-columns: 4;
+  $grid-item-big-columns: 8;
+  $grid-item-color: white;
+  $grid-item-height: 300px;
 
-    a {
+  @include clearfix;
+    
+  .grid-item {
+    @include transition (all 0.2s ease-in-out);
+    height: $grid-item-height;
+    background: $grid-item-background;
+    width: 100%;
+    overflow: hidden;
+    float: left;
+    border-top: 0;
+    border-bottom: $grid-item-border-size solid $grid-items-background;
+    border-left: $grid-item-border-size /2 solid $grid-items-background;
+    border-right: $grid-item-border-size /2 solid $grid-items-background;
+    text-align: center;
+    cursor: pointer;
+
+    @include media($bp-large) {
+      @include grid-item-columns($grid-item-columns);
+    }
+
+  }
+
+  .grid-item-content {
     display: block;
     width: 100%;
-    height: 300px;
-    }
+    height: 100%;
+    padding-top: 4.2em;
+    background: rgba(0,0,0,0.8);
+    opacity: 0;
+    @include transition (all 0.2s ease-in-out);
 
-    .project-title {
-    position: absolute;
-    bottom: -54px;
-    width: 100%;
-    padding: 1em;
-    color: $color-white;
-    background: rgba(54,54,54,0.9);
-    border-top: 2px solid $color-gray-light;
-    @include transition (all .2s ease-in-out);
-  }
-}
-
-.box:hover {
-  background-color: $color-gray-dark;
-
-  .project-title {
-    bottom: 0;
-  }
-}
-
-
-@media (min-width: $bp-medium) {
-  .box {
-    @include span-columns(6);
-    @include omega(2n);
-  }
-
-  .boxes {
-    .google-xy {
-      @include span-columns(8);
-      @include shift(2);
+    &:hover {
+      opacity: 1;
     }
   }
 
-}
-
-@media (min-width: $bp-large) {
-  .box {
-    @include omega-reset(2n);
-    @include span-columns(4);
-    @include omega(3n);
+  .grid-item i {
+    color: $grid-item-color;
+    margin-bottom: .2em;
   }
 
-  .boxes {
-    .google-xy {
-      @include span-columns(4);
-      @include shift(0);
+  .grid-item h1 {
+    color: $grid-item-color;
+    font-size: 1.3em;
+    margin-bottom: .4em;
+  }
+
+  .grid-item p {
+    margin: auto;
+    color: transparentize($grid-item-color, .3);
+    font-size: 75%;
+    font-weight: 700;
+    @include media($bp-medium) {
+      max-width: 70%;
     }
   }
 
+  .grid-item-big {
+    @include media($bp-large) {
+      @include grid-item-columns($grid-item-big-columns);
+    }
+    p {
+      @include media($bp-medium) {
+        max-width: 60%;
+      }  
+    }
+  }
+
+  .grid-item-image {
+    background: url();
+    background-color: $grid-item-background;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+  }
+
+  .ghostwire { background: #4A5966 url(../images/projects/ghostwire-news.png) top center no-repeat;}
+  .google-xy { background: #ffe27e url(../images/projects/google-xy.png) top right no-repeat;}
+  .starcraft-wcs { background: #09131e url(../images/projects/starcraft-wcs-c.png) top right no-repeat;}
 }
+
+
+
 
 p.quote {
-    color: $color-gray-light;
+    color: $light-gray;
     font-size: 85%;
     text-align: center;
   }
@@ -142,12 +210,12 @@ p.quote {
   @include span-columns(12);
   padding-left: 1rem;
 
-  h3.project-title {
-    @extend %c-h5;
+  h2.project-title {
     display: block;
     width: 100%;
-    color: $color-gray-dark;
-    border-bottom: 2px solid $color-gray-light;
+    color: $medium-gray;
+    font-size: 1.3em;
+    margin: 1em 0;
   }
 
   p {
@@ -155,8 +223,8 @@ p.quote {
     font-size: 85%;
   }
 
-  h3:hover {
-    color: $color-black;
+  h2:hover {
+    color: black;
   }
 }
 
@@ -165,7 +233,7 @@ p.quote {
   .project-image {
     @include span-columns(6);
     padding: 3em 0;
-    border-right: 2px solid $color-gray-light;
+    border-right: 2px solid $light-gray;
   }
 
   .project-info {
@@ -182,7 +250,7 @@ p.quote {
   .project-image {
     @include span-columns(7);
     padding-right: 2rem;
-    border-right: 2px solid $color-gray-light;
+    border-right: 2px solid $light-gray;
   }
 
   .project-info {
@@ -193,9 +261,20 @@ p.quote {
 
 }
 
+.opengov { 
+
+  .project-image {
+    background: #709C40;
+
+    a {
+      background: url(../images/projects/opengov.png) top right no-repeat;
+    }
+  }
+}
+
 .starcraft-wcs { 
 
-  .project-image, .box-image {
+  .project-image {
     background: #09131e;
 
     a {
@@ -205,7 +284,7 @@ p.quote {
 }
 
 .google-xy {
-  .project-image, .box-image {
+  .project-image {
     background: #ffe27e;
 
     a {
@@ -225,7 +304,7 @@ p.quote {
 }
 
 .ghostwire {
-  .project-image, .box-image {
+  .project-image {
     background: #4A5966;
 
     a {
@@ -277,12 +356,12 @@ p.quote {
   @include span-columns(12);
   padding-left: 1rem;
 
-  h3.about-title {
-    @extend %c-h5;
+  h2.about-title {
     display: block;
     width: 100%;
-    color: $color-gray-dark;
-    border-bottom: 2px solid $color-gray-light;
+    color: $medium-gray;
+    font-size: 1.3em;
+    margin: 1em 0;
   }
 
   p {
@@ -298,7 +377,7 @@ p.quote {
   .about-image {
     @include span-columns(4);
     padding-right: 2rem;
-    border-right: 2px solid $color-gray-light;
+    border-right: 2px solid $light-gray;
   }
 
   .about-info {

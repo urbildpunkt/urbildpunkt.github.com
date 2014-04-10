@@ -1,12 +1,17 @@
 ---
-title: 'John Quealy | About'
-introTitle: 'John Quealy'
-introTagline: 'I am available for work, and willing to relocate.'
+title: "John Quealy | About"
+introTitle: "Hello, I'm John Quealy."
+introTagline: "I'm available for work and willing to relocate."
 ---
 
 - content_for :head do
   :css
-      header, .headroom, .headroom--pinned, .headroom:hover { background: #0088cc;}
+      header { background: url('/assets/images/giftly.png');
+        animation: animatedBackground 200s linear infinite;
+        -ms-animation: animatedBackground 200s linear infinite;
+        -moz-animation: animatedBackground 200s linear infinite;
+        -webkit-animation: animatedBackground 200s linear infinite;
+      }
 
 %ul.about
   - data.about.each do |p|
@@ -14,5 +19,5 @@ introTagline: 'I am available for work, and willing to relocate.'
       %div.about
         %div.about-image
         %div.about-info
-          %h3.about-title=  p["title"]
+          %h2.about-title=  p["title"]
           %p= p['description']

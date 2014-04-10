@@ -32,7 +32,9 @@
   = partial 'footer', :locals => { :data => current_page.data }
 
   / js scripts
+  = javascript_include_tag "//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"
   = javascript_include_tag "headroom.min"
   = javascript_include_tag 'responsive-nav.min'
   = javascript_include_tag "app"
+  = yield_content :footer
   = partial "partials/_google_analytics"

@@ -1,12 +1,17 @@
 ---
 title: 'John Quealy | Portfolio'
-introTitle: 'My Portfolio'
-introTagline: 'of Featured Work'
+introTitle: 'Featured Work'
+introTagline: 'Portfolio'
 ---
 
 - content_for :head do
   :css
-      header, .headroom, .headroom--pinned, .headroom:hover { background: #0088cc;}
+      header { background: url('/assets/images/geometry.png');
+        animation: animatedBackground 90s linear infinite;
+        -ms-animation: animatedBackground 90s linear infinite;
+        -moz-animation: animatedBackground 90s linear infinite;
+        -webkit-animation: animatedBackground 90s linear infinite;
+      }
 
 %ul.featured
   - data.projects.each do |p|
@@ -16,7 +21,7 @@ introTagline: 'of Featured Work'
           %a{href: p['url'], target: p['url-target']}
         %div.project-info
           %a{href: p['url'], target: p['url-target']}
-            %h3.project-title=  p["title"]
+            %h2.project-title=  p["title"]
           %p= p['description']
 
 

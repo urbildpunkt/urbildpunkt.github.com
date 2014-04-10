@@ -1,10 +1,22 @@
-- title: "<i class='fa fa-fw fa-play-circle'></i> Starcraft II WCS"
+- title: "<i class='fa fa-fw fa-play-circle'></i> StarCraft II WCS"
   slug: "starcraft-wcs"
   url: "/starcraft.html"
   url-target: "_self"
   date: "June 2013"
   description: | 
-    A spec work interview assignment redesigning the Starcraft II World Championship Series community website. Since the video player is a main point of focus for visitors, I wanted to explore also making it a main point of focus for navigation and content. I created a sidebar panel that allows the viewer to access relevant information or browse for additional content without interrupting the display of the video.
+    A spec work interview assignment redesigning the StarCraft II World Championship Series community website. Since the video player is a main point of focus for visitors, I wanted to explore also making it a main point of focus for navigation and content. I created a sidebar panel that allows the viewer to access relevant information or browse for additional content without interrupting the display of the video.
+  tags: 
+      - conceptual
+      - prototype
+      - user interface
+
+- title: "<i class='fa fa-fw fa-map-marker'></i> OpenGov"
+  slug: "opengov"
+  url: "/opengov.html"
+  url-target: "_self"
+  date: "June 2013"
+  description: | 
+    A spec work interview assignment designing a search feature for the OpenGov website.
   tags: 
       - conceptual
       - prototype
@@ -16,7 +28,7 @@
   url-target: "_blank"
   date: "Spring 2012"
   description: | 
-    A speculative design project exploring Google"s place in the Internet of Things; based around Bruce Sterling’s ideas of the SPIME, “a location-aware, environment-aware, self-logging, self-documenting, uniquely identified object."
+    A speculative design project exploring Google's place in the Internet of Things; based around Bruce Sterling’s ideas of the SPIME, “a location-aware, environment-aware, self-logging, self-documenting, uniquely identified object."
   tags: 
       - conceptual
       - prototype

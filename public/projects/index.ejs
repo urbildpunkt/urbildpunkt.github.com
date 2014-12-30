@@ -32,7 +32,7 @@
                   <div class="category"><%- project.category %></div>
                 </header>
                 <div class="project-content">
-                  <img class="img-responsive" src="/assets/images/projects/<%- slug %>/thumb.png" title="<%- project.title %>" %>
+                  <img class="img-responsive" src="/assets/images/projects/<%- slug %>/thumb.png" alt="<%- project.title %>">
                   <p class="project-description"><%- project.description %><br><small><%- project.technology %></small></p>
                 </div>
               </a>
@@ -42,7 +42,7 @@
 
               <li class="project <%- slug %> <%- classes %>">
                 <div class="project-content">
-                  <img class="img-responsive" src="/assets/images/projects/<%- slug %>/thumb.png" title="<%- project.title %>" %>
+                  <img class="img-responsive" src="/assets/images/projects/<%- slug %>/thumb.png" alt="<%- project.title %>">
                   <p class="project-description"><%- project.description %>
                     <br><small><%- project.technology %></small>
                     <% if(project.link) { %>

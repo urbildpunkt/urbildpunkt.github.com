@@ -4,19 +4,19 @@
   </div>
 </div>
 
-<section class="expertise">
+<div class="expertise">
   <div class="skills">
-    <article class="icon-card strategy">
-      <img class="clipboard" src="/assets/images/Clipboard-Plan.svg">
-    </article>
-    <article class="icon-card design">
-      <img class="mind-map" src="/assets/images/Mind-Map-Paper.svg">
-    </article>
-    <article class="icon-card code">
-      <img class="coding-html" src="/assets/images/Coding-Html.svg">
-    </article>
+    <div class="icon-card strategy">
+      <img class="clipboard"  alt="Strategy" src="/assets/images/Clipboard-Plan.svg">
+    </div>
+    <div class="icon-card design">
+      <img class="mind-map" alt="Design" src="/assets/images/Mind-Map-Paper.svg">
+    </div>
+    <div class="icon-card code">
+      <img class="coding-html" alt="Code" src="/assets/images/Coding-Html.svg">
+    </div>
   </div>
-</section>
+</div>
 
 <section class="featured projects-list">
   <h2>Featured Projects <a href="/projects">View All ></a></h2>
@@ -35,7 +35,7 @@
                 <span class="category"><%- project.category %></span>
               </header>
               <div class="project-content">
-                <img class="img-responsive" src="/assets/images/projects/<%- slug %>/thumb.png" title="<%- project.title %>" %>
+                <img class="img-responsive" src="/assets/images/projects/<%- slug %>/thumb.png" alt="<%- project.title %>">
                 <p class="project-description"><%- project.description %>
                   <br><small><%- project.technology %></small>
                   <% if(project.link) { %>
@@ -50,7 +50,7 @@
 
           <li class="project <%- slug %> <%- classes %>">
             <div class="project-content">
-              <img class="img-responsive" src="/assets/images/projects/<%- slug %>/thumb.png" title="<%- project.title %>" %>
+              <img class="img-responsive" src="/assets/images/projects/<%- slug %>/thumb.png" alt="<%- project.title %>">
               <p class="project-description"><%- project.description %>
                 <br><small><%- project.technology %></small>
                 <% if(project.link) { %>

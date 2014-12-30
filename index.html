@@ -1,13 +1,287 @@
-<!DOCTYPE html> <!--[if lt IE 7]><html class="no-js ie6" lang=en><![endif]--> <!--[if IE 7]><html class="no-js ie7" lang=en><![endif]--> <!--[if IE 8]><html class="no-js ie8" lang=en><![endif]--> <!--[if (gte IE 9)|!(IE)]><!--><html class=no-js lang=en><![endif]--> <head> <meta charset=utf-8> <meta content='IE=edge,chrome=1' http-equiv=X-UA-Compatible> <meta content='width=device-width, initial-scale=1.0' name=viewport> <title>John Quealy</title> <link href="assets/stylesheets/application-497c805a.css" media=screen rel=stylesheet /> <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" media=screen rel=stylesheet /> <style>
-      header { background: url('/assets/images/stardust-b4c28d9a.png'); 
-        animation: animatedBackground 90s linear infinite;
-        -ms-animation: animatedBackground 90s linear infinite;
-        -moz-animation: animatedBackground 90s linear infinite;
-        -webkit-animation: animatedBackground 90s linear infinite;
-      }
-  </style> </head> <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--> <body class=index> <header> <div class=nav-bar> <div class=nav-wrap> <a class=logo href='/'>Urbildpunkt</a> <a class=closed id=nav-toggle> <i class='fa fa-fw fa-lg fa-bars'></i> <i class='fa fa-fw fa-lg fa-times'></i> Menu </a> <nav class=nav-collapse> <ul> <li class=active> <a href='/'> <i class='fa fa-home'></i> Home </a> </li> <li> <a href='/work.html'> <i class='fa fa-briefcase'></i> Work </a> </li> <li> <a href='/about.html'> <i class='fa fa-user'></i> About </a> </li> <li> <a href='https://docs.google.com/document/d/1VlgMYpnDPGFKPt2UF2EfxD6fKvKuu3yw8Wy0Uh9kmDE/edit?usp=sharing' target=_blank> <i class='fa fa-file-text'></i> Resume </a> </li> </ul> </nav> </div> </div> <div class=hero> <div class=hero-inner> <h1>Hello, I'm John Quealy.</h1> <p>I plan, design, and create experiences.</p> </div> </div> </header> <div class=services-row> <div class=services> <div class=service> <div class='service-icon service-icon-1'> <i class='fa fa-2x fa-cloud'></i> </div> <div class=service-content> <h2>Strategy</h2> <p>Information Architecture</p> </div> </div> <div class=service> <div class='service-icon service-icon-2'> <i class='fa fa-2x fa-edit'></i> </div> <div class=service-content> <h2>Design</h2> <p>UX / UI & Web Design</p> </div> </div> <div class=service> <div class='service-icon service-icon-3'> <i class='fa fa-2x fa-laptop'></i> </div> <div class=service-content> <h2>Code</h2> <p>Front-End Development</p> </div> </div> </div> </div> <div class=front-page> <div class=grid-items> <a class='grid-item ghostwire' href='//urbildpunkt.com/ghostwire/' target=_blank> <div class=grid-item-content> <i class='fa fa-3x fa-rss'></i> <h1>Ghostwire: News</h1> <p>Ghost Blog Theme</p> </div> </a> <a class='grid-item starcraft-wcs' href='/starcraft.html'> <div class=grid-item-content> <i class='fa fa-3x fa-play-circle'></i> <h1>StarCraft II WCS</h1> <p>UX / UI Design</p> </div> </a> <a class='grid-item google-xy' href='//urbildpunkt.com/static/googlexy/' target=_blank> <div class=grid-item-content> <i class='fa fa-3x fa-dashboard'></i> <h1>Google X/Y: Dashboard</h1> <p>UX / UI / Web & Mobile Design</p> </div> </a> </div> </div> <footer class=site-footer> <div class=footer-nav-bar> <nav class=footer-nav-wrap> <ul class=social-nav> <li> <a href='mailto:john@urbildpunkt.com' target=_blank> <i class='fa fa-envelope'></i> </a> </li> <li class=twitter> <a href='//www.twitter.com/urbildpunkt' target=_blank> <i class='fa fa-twitter'></i> </a> </li> <li class=google-plus> <a href='https://www.google.com/+JohnQuealy' target=_blank> <i class='fa fa-google-plus'></i> </a> </li> <li class=linkedin> <a href='//www.linkedin.com/in/jquealy/' target=_blank> <i class='fa fa-linkedin'></i> </a> </li> <li class=github> <a href='//www.github.com/urbildpunkt' target=_blank> <i class='fa fa-github'></i> </a> </li> </ul> </nav> </div> </footer> <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> <script src="assets/javascripts/headroom.min-d4901309.js"></script> <script src="assets/javascripts/responsive-nav.min-f1e1df24.js"></script> <script src="assets/javascripts/app-b5da00c4.js"></script> <script>
-    var _gaq=[['_setAccount','UA-48707601-1'],['_trackPageview']];
-    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-    s.parentNode.insertBefore(g,s)}(document,'script'));
-  </script> </body>
+
+
+  
+
+
+  <!doctype html>
+  <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+  <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+  <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+  <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Home / John Quealy</title>
+    <meta name="description" content="Product Designer.">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="/assets/stylesheets/main.css">
+
+
+    <meta property="og:title" content="Home / John Quealy" />
+    <meta property="og:description" content="Product Designer." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://urbildpunkt.com/" />
+    <meta property="og:site_name" content="John Quealy" />
+  </head>
+  <body class="home">
+
+    <header class="navigation">
+      <div class="navigation-wrapper">
+        <a href="/" class="logo">
+          John Quealy
+        </a>
+        <a class="navigation-menu-button" id="js-mobile-menu"><i class="mobile-nav-icon" id="navigation-menu-icon"></i> </a>
+        <div class="nav">
+          <ul id="navigation-menu">
+            
+            <li class="nav-link home"><a href="/" class="selected"><i class="nav-icon"></i> Home</a></li>
+            <li class="nav-link about"><a href="/about" class=""><i class="nav-icon"></i> About</a></li>
+            <li class="nav-link portfolio"><a href="/projects" class=""><i class="nav-icon"></i> Projects</a></li>
+            <!-- <li class="nav-link journal"><a href="/journal" class=""><i class="nav-icon"></i> Journal</a></li> -->
+            <li class="nav-link contact"><a href="mailto:john@urbildpunkt.com" target="_blank"><i class="nav-icon"></i> <span>Contact</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <div class="shim"></div>
+
+
+
+
+  <div class="index-hero">
+  <div class="hero-intro">
+    <h2>I'm a product designer, with a focus on user experience and a love for data.</h2>
+  </div>
+</div>
+
+<section class="expertise">
+  <div class="skills">
+    <article class="icon-card strategy">
+      <img class="clipboard" src="/assets/images/Clipboard-Plan.svg">
+    </article>
+    <article class="icon-card design">
+      <img class="mind-map" src="/assets/images/Mind-Map-Paper.svg">
+    </article>
+    <article class="icon-card code">
+      <img class="coding-html" src="/assets/images/Coding-Html.svg">
+    </article>
+  </div>
+</section>
+
+<section class="featured projects-list">
+  <h2>Featured Projects <a href="/projects">View All ></a></h2>
+  <ul>
+    
+
+      
+    
+
+      
+        
+        
+
+        
+
+          <li class="project buoy unpublished">
+            <div class="project-content">
+              <img class="img-responsive" src="/assets/images/projects/buoy/thumb.png" title="Buoy App" %>
+              <p class="project-description">An app for dropping anonymous notes around the world.
+                <br><small>Ionic, Angular, Firebase</small>
+                
+                  <br><a href="http://buoyapp.net" target="_blank">View Project</a>
+                  
+                </p>
+            </div>
+            <header>
+              <h3 class="project-title"><i class="project-icon"></i>Buoy App</h3>
+              <span class="category">UX, UI, Mobile, Web, Brand</span>
+            </header>
+          </li>
+
+        
+      
+    
+
+      
+        
+        
+
+        
+      
+    
+
+      
+        
+        
+
+        
+      
+    
+
+      
+        
+        
+
+        
+
+          <li class="project opengov unpublished">
+            <div class="project-content">
+              <img class="img-responsive" src="/assets/images/projects/opengov/thumb.png" title="OpenGov City Finder" %>
+              <p class="project-description">An interactive widget to search for and locate customers of the OpenGov platform.
+                <br><small></small>
+                
+                  <br><a href="http://urbildpunkt.com/static/opengov/" target="_blank">View Project</a>
+                  
+                </p>
+            </div>
+            <header>
+              <h3 class="project-title"><i class="project-icon"></i>OpenGov City Finder</h3>
+              <span class="category">UX, Web</span>
+            </header>
+          </li>
+
+        
+      
+    
+
+      
+        
+        
+
+        
+
+          <li class="project starcraft-wcs unpublished">
+            <div class="project-content">
+              <img class="img-responsive" src="/assets/images/projects/starcraft-wcs/thumb.png" title="StarCraft II WCS Player" %>
+              <p class="project-description">An interactive video player and scoreboard interface for the StarCraft II World Championship Series.
+                <br><small></small>
+                
+                </p>
+            </div>
+            <header>
+              <h3 class="project-title"><i class="project-icon"></i>StarCraft II WCS Player</h3>
+              <span class="category">UX, UI, Web</span>
+            </header>
+          </li>
+
+        
+      
+    
+
+      
+        
+        
+
+        
+
+          <li class="project google-xy unpublished">
+            <div class="project-content">
+              <img class="img-responsive" src="/assets/images/projects/google-xy/thumb.png" title="Google X/Y: Dashboard" %>
+              <p class="project-description">A speculative design project exploring Google's place in the Internet of Things, based around ideas from Bruce Sterling's book, <em>Shaping Things</em>.
+                <br><small></small>
+                
+                  <br><a href="http://urbildpunkt.com/static/googlexy/" target="_blank">View Project</a>
+                  
+                </p>
+            </div>
+            <header>
+              <h3 class="project-title"><i class="project-icon"></i>Google X/Y: Dashboard</h3>
+              <span class="category">UX, UI, Web, Mobile</span>
+            </header>
+          </li>
+
+        
+      
+    
+
+      
+        
+        
+
+        
+      
+    
+
+      
+        
+        
+
+        
+      
+    
+
+      
+        
+        
+
+        
+      
+    
+
+      
+        
+        
+
+        
+      
+    
+
+      
+        
+        
+
+        
+      
+    
+
+      
+        
+        
+
+        
+      
+    
+
+      
+        
+        
+
+        
+      
+    
+  </ul>
+</section>
+
+
+  
+
+
+  <footer class="site-footer">
+    <div class="footer-links">
+      <div class="credits">
+        <p>Built using <a href="http://harpjs.com/" target="_blank">Harp</a>, <a href="http://bourbon.io/" target="_blank">Bourbon</a>, and <a href="http://neat.bourbon.io/" target="_blank">Neat</a>.
+        <br>Open source on <a href="http://github.com/urbildpunkt/urbildpunkt.github.com" target="_blank">GitHub</a>.</p>
+      </div>
+      <div class="social-links">
+        <ul>
+          <li><a href="http://www.github.com/urbildpunkt" target="_blank"><img src="/assets/images/icons/github.png"></a></li>
+          <li><a href="http://www.twitter.com/urbildpunkt" target="_blank"><img src="/assets/images/icons/twitter.png"></a></li>
+          <li><a href="https://www.google.com/+JohnQuealy" target="_blank"><img src="/assets/images/icons/google-plus.png"></a></li>
+          <li><a href="http://www.linkedin.com/in/jquealy/" target="_blank"><img src="/assets/images/icons/linkedin.png"></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="/assets/javascripts/main.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+  

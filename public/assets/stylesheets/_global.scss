@@ -66,7 +66,7 @@ body {
   color: $medium-gray;
   margin-bottom: 1.4em;
 
-  figure {
+  .icon {
     @include background(linear-gradient(90deg, lighten($light-gray, 5) 50%, $light-gray 50%));
     display: inline-block;
     height: 3em;
@@ -81,7 +81,7 @@ body {
     margin-top: .5em;
   }
 
-  span {
+  .icon-text {
     position: relative;
     top: -.5em;
     left: 1em;

@@ -1,0 +1,23 @@
+<aside class="sidebar">
+</aside>
+
+<section class="articles-list">
+  <ul>
+    <% for(slug in public.journal._data) { %>
+      <% if(slug != "index") { %>
+        <% var article = public.journal._data[slug] %>
+        <% if(article.published !== false || environment=='development') { %>
+          <% var classes = article.published == false ? 'unpublished' : slug %>
+          <li class="article <%- classes %>">
+            <!-- <div class="article-image">
+            <img class="img-responsive" src="/images/articles/<%- slug %>/thumb.jpg" title="<%- article.title %>" %>
+          </div> -->
+          <a href="/journal/<%- slug %>"><h3 class="article-title"><i class="article-icon"></i><%- article.title %></h3></a>
+          <span class="date"><%- article.date %></span>
+          <p class="article-tagline"><%- article.tagline %></p>
+        </li>
+        <% } %>
+      <% } %>
+    <% } %>
+  </ul>
+</section>

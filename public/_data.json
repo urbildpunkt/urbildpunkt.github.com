@@ -1,0 +1,38 @@
+{
+  "index": {
+    "title": "Home"
+  },
+  "about": {
+    "title": "About"
+  },
+  "404": {
+    "title": "Oh no!"
+  },
+  "links": {
+    "index": {
+      "label": "Home",
+      "url": "/",
+      "published": true
+    },
+    "about": {
+      "label": "About",
+      "url": "/about",
+      "published": true
+    },
+    "projects": {
+      "label": "Projects",
+      "url": "/projects",
+      "published": true
+    },
+    "articles": {
+      "label": "Articles",
+      "url": "/articles",
+      "published": true
+    },
+    "contact": {
+      "label": "Contact",
+      "url": "javascript:void(0)",
+      "published": true
+    }
+  }
+}

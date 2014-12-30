@@ -1,0 +1,100 @@
+
+body {
+  overflow-x: hidden;
+}
+
+.date, .category {
+  display: block;
+  font-family: $sans-serif;
+  font-size: 80%;
+  font-weight: 400;
+  color: $medium-gray;
+
+  // &:before {
+  //   display: inline-block;
+  //   content: "";
+  //   width: 1em;
+  //   height: 1em;
+  //   margin-right: .3em;
+  //   background: url(/assets/images/icons/clock.svg);
+  //   background-size: cover;
+  // }
+}
+
+%container {
+  @include clearfix;
+  @include outer-container;
+}
+
+%one-third {
+  @include span-columns(4);
+}
+
+%two-thirds {
+  @include span-columns(8);
+}
+
+
+%card {
+  @extend .animated;
+  background-color: white;
+  padding: 2%;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12);
+}
+
+%block-card {
+  @extend .animated;
+  background-color: white;
+  margin: 0 auto;
+  margin-bottom: 1.6em;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12);
+}
+
+%list-card {
+  @extend .animated;
+  background-color: white;
+  padding: 2%;
+  border-left: 5px solid transparent;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12);
+}
+
+%card-icon-header {
+  font-size: 1em;
+  font-weight: 500;
+  color: $medium-gray;
+  margin-bottom: 1.4em;
+
+  figure {
+    @include background(linear-gradient(90deg, lighten($light-gray, 5) 50%, $light-gray 50%));
+    display: inline-block;
+    height: 3em;
+    width: 3em;
+    text-align: center;
+    border-radius: 50%;
+  }
+
+  img {
+    height: 2em;
+    width: 2em;
+    margin-top: .5em;
+  }
+
+  span {
+    position: relative;
+    top: -.5em;
+    left: 1em;
+  }
+}
+
+%card-body {
+  margin-bottom: 1.4em;
+  padding: 0 1em;
+}
+
+@include media ($medium-screen) {
+  %card-body {
+    padding: 0 2em 0 4em;
+  }
+}

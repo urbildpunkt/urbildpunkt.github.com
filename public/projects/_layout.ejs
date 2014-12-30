@@ -1,0 +1,25 @@
+
+
+<%- partial("../_shared/_main", {mode:"header"}) %>
+
+
+  <% if(current.path[0] == "projects" && current.source == 'index') { %>
+
+    <%- yield %>
+
+  <% } else { %>
+    <section class="project-intro">
+
+      <header class="hero <%- current.source %>">
+        <h1><%- title %></h1>
+      </header>
+
+    </section>
+
+    <section class="project-body">
+      <%- yield %>
+    </section>
+
+  <% } %>
+
+<%- partial("../_shared/_main", {mode:"footer"}) %>

@@ -1,0 +1,53 @@
+.site-footer {
+  @extend .animated;
+  @extend .fadeIn;
+  padding: 2em 0;
+  color: $light-gray;
+  background: #292D30;
+
+  a {
+    color: white;
+  }
+}
+
+.footer-links {
+  @extend %container;
+}
+
+.credits {
+  @include span-columns(12);
+  text-align: center;
+
+  @include media ($medium-screen) {
+    @include span-columns(6);
+    text-align: left;
+  }
+}
+
+.social-links {
+  @include span-columns(12);
+  text-align: center;
+
+  @include media ($medium-screen) {
+    @include span-columns(6);
+    text-align: right;
+  }
+
+  li {
+    display: inline;
+    margin-right: .5em;
+
+    a {
+      border: none;
+      opacity: 0.4;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+    img {
+      width: 40px;
+    }
+  }
+}

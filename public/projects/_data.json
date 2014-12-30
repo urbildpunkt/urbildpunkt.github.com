@@ -1,0 +1,128 @@
+{
+  "index": {
+    "title": "Projects"
+  },
+
+  "buoy": {
+    "hidden": true,
+    "featured": true,
+    "title": "Buoy App",
+    "date": "Nov 2014 - Current",
+    "published": false,
+    "description": "An app for dropping anonymous notes around the world.",
+    "category": "UX, UI, Mobile, Web, Brand",
+    "technology": "Ionic, Angular, Firebase",
+    "link": "http://buoyapp.net"
+  },
+  "openly-secular": {
+    "title": "Openly Secular Campaign",
+    "date": "June 2014 - Sept 2014",
+    "published": false,
+    "description": "An awareness campaign focused on removing the negative stigmas associated with being an athiest.",
+    "category": "UX, UI, Web",
+    "technology": "React, Bootstrap",
+    "link": "http://openlysecular.org"
+  },
+  "campaign-builder": {
+    "title": "Campaign Builder",
+    "date": "Apr 2014 - Nov 2014",
+    "published": false,
+    "description": "A community-organizing platform built for empowering small companies and candidates to easily launch online campaign websites.",
+    "category": "UX, Web",
+    "technology": "",
+    "link": ""
+  },
+  "opengov": {
+    "featured": true,
+    "title": "OpenGov City Finder",
+    "date": "Apr 2014",
+    "published": false,
+    "description": "An interactive widget to search for and locate customers of the OpenGov platform.",
+    "category": "UX, Web",
+    "technology": "",
+    "link": "http://urbildpunkt.com/static/opengov/"
+  },
+  "starcraft-wcs": {
+    "featured": true,
+    "title": "StarCraft II WCS Player",
+    "date": "June 2013",
+    "published": false,
+    "description": "An interactive video player and scoreboard interface for the StarCraft II World Championship Series.",
+    "category": "UX, UI, Web",
+    "technology": "",
+    "link": ""
+  },
+  "google-xy": {
+    "featured": true,
+    "title": "Google X/Y: Dashboard",
+    "date": "Mar 2012 - June 2012",
+    "published": false,
+    "description": "A speculative design project exploring Google's place in the Internet of Things, based around ideas from Bruce Sterling's book, <em>Shaping Things</em>.",
+    "category": "UX, UI, Web, Mobile",
+    "technology": "",
+    "link": "http://urbildpunkt.com/static/googlexy/"
+  },
+  "planeshift": {
+    "title": "PlaneShift Interface",
+    "date": "2008",
+    "published": false,
+    "description": "A conceptual user interface and matching website redesign for the open source MMORPG, <em>Planeshift</em>",
+    "category": "UI, Gaming",
+    "technology": "",
+    "link": ""
+  },
+  "ghostwire": {
+    "title": "Ghostwire: News Theme",
+    "date": "June 2013",
+    "published": false,
+    "description": "A responsive news theme for the open source publishing platform, Ghost.",
+    "category": "Web",
+    "technology": "",
+    "link": "http://urbildpunkt.com/ghostwire/"
+  },
+  "inkfish": {
+    "title": "Inkfish Themes",
+    "date": "Mar 2012 - June 2012",
+    "published": false,
+    "description": "A collection of responsive portfolio themes built with Stacey, an open source flat-file cms.",
+    "category": "Web",
+    "technology": "",
+    "link": "http://urbildpunkt.com/static/inkfish-australis/"
+  },
+  "camidesign": {
+    "title": "camiDESIGN",
+    "date": "2008",
+    "published": false,
+    "description": "Web and graphic design for an architecture and interior design firm.",
+    "category": "Web, Graphic, Marketing",
+    "technology": "",
+    "link": ""
+  },
+  "digital-wind-chime": {
+    "title": "Digital Wind Chime",
+    "date": "June 2012",
+    "published": false,
+    "description": "A \"digital wind\" chime. I wanted to create an “appliance-like” device that would feel at home on a desk in the same way that a nice clock might.",
+    "category": "Physical Prototyping",
+    "technology": "Arduino, Processing",
+    "link": ""
+  },
+  "seizure-monitor": {
+    "title": "Wearable Seizure Monitor",
+    "date": "June 2012",
+    "published": false,
+    "description": "A discrete, wearable device to detect seizures and call out for help at a time when the wearer could not.",
+    "category": "Physical Prototyping",
+    "technology": "Arduino",
+    "link": ""
+  },
+  "public-sphere": {
+    "title": "Global Public Sphere",
+    "date": "June 2012",
+    "published": false,
+    "description": "My senior project researching the relationship between social media and politics through the events of the Arab Spring.",
+    "category": "New Media",
+    "technology": "Popcorn.js, Timeline.js",
+    "link": ""
+  }
+}

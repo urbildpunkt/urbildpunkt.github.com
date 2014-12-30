@@ -1,0 +1,260 @@
+// overlay under nav on mobile
+.shim {
+  display: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: #222222;
+  z-index: 999;
+}
+
+
+header.navigation {
+  $header-background: #292D30;
+  $navigation-padding: 1em;
+  $navigation-background: #222222;
+  $navigation-color: #D0D2D4;
+  $navigation-color-hover: white;
+  $navigation-height: 90px;
+  $navigation-active-link-color: white;
+
+  background-color: $header-background;
+  height: $navigation-height/1.5;
+  width: 100%;
+  z-index: 999;
+
+  @include media ($medium-screen) {
+    height: $navigation-height;
+  }
+
+  .navigation-wrapper {
+    @include clearfix;
+    @include outer-container;
+    position: relative;
+    z-index: 9999;
+    text-align: center;
+  }
+
+  a {
+    color: $navigation-color;
+    border: none;
+
+    &.active {
+      color: $navigation-color-hover;
+    }
+
+    &:hover {
+      color: $navigation-color-hover;
+    }
+
+    &.selected {
+      color: $navigation-color-hover;
+    }
+
+  }
+
+  .logo {
+    display: inline;
+    line-height: $navigation-height/1.5;
+    max-height: $navigation-height;
+    padding-left: $navigation-padding;
+    font-family: $sans-serif;
+    font-size: 1.2em;
+    font-weight: 400;
+    color: #D0D2D4;
+
+    @include media ($medium-screen) {
+      float: left;
+      line-height: $navigation-height*1.1;
+    }
+
+    img {
+      max-height: $navigation-height;
+      padding: .8em 0;
+    }
+  }
+
+
+  // Mobile view
+
+  .navigation-menu-button {
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    width: 40px;
+    height: 40px;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    @include media ($medium-screen) {
+      display: none;
+    }
+  }
+
+  .mobile-nav-icon {
+    @include transition(all .2s ease-in-out);
+    display: inline-block;
+    position: relative;
+    width: 2.4em;
+    height: 2.4em;
+    border-radius: 50%;
+    background-color: $dark-gray;
+    background-image: url("/assets/images/icons/menu.svg");
+    background-repeat: no-repeat;
+    background-size: 1.5em;
+    background-position: center center;
+
+    &.selected {
+      background-image: url("/assets/images/icons/close.svg");
+    }
+  }
+
+
+  // Nav menu
+
+  .nav {
+    z-index: 9999999;
+    float: none;
+    @include media ($medium-screen) {
+      float: right;
+    }
+  }
+
+  ul#navigation-menu {
+    -webkit-transform-style: preserve-3d;
+    // stop webkit flicker
+    clear: both;
+    display: none;
+    margin: 0 auto;
+    overflow: visible;
+    padding: 0;
+    width: 100%;
+    z-index: 9999;
+
+    @include media ($medium-screen) {
+      display: inline;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+
+  // The nav items
+
+  ul li.nav-link {
+    background: $navigation-background;
+    display: block;
+    line-height: 70px;
+    text-align: left;
+    overflow: hidden;
+    width: 100%;
+    z-index: 9999;
+    border-bottom: 1px solid lighten($navigation-background, 5);
+
+    &:first-child {
+      border-top: 1px solid $medium-gray;
+    }
+
+    @include media ($medium-screen) {
+      background: transparent;
+      display: inline;
+      line-height: $navigation-height*1.1;
+      text-decoration: none;
+      width: auto;
+      border: none;
+
+      &:first-child {
+        border: none;
+      }
+    }
+
+    .fa {
+      padding-right: 8px;
+    }
+
+    a {
+      display: inline-block;
+      width: 100%;
+      padding-left: 6em;
+      font-family: $sans-serif;
+      font-weight: 400;
+
+      &:hover {
+        .nav-icon {
+          opacity: 1;
+        }
+      }
+
+      &.selected {
+        font-weight: 700;
+
+        .nav-icon {
+          opacity: 1;
+        }
+      }
+
+      @include media ($medium-screen) {
+        width: auto;
+        padding: 0 .7em;
+        text-align: center;
+      }
+
+      @include media ($large-screen) {
+        padding: 0 1em;
+      }
+    }
+  }
+}
+
+.nav-icon {
+  @include transition(all .2s ease-in-out);
+  display: inline-block;
+  position: relative;
+  top: .52em;
+  width: 2em;
+  height: 2em;
+  margin-right: .4em;
+  border-radius: 50%;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: 1.5em;
+  background-position: center center;
+  opacity: 0.6;
+}
+
+.nav-link.home {
+  @include media($medium-screen) {
+    display: none !important;
+  }
+
+  .nav-icon {
+    background-image: url('/assets/images/icons/home.svg');
+  }
+}
+
+.nav-link.about {
+  .nav-icon {
+    background-image: url('/assets/images/icons/about.svg');
+  }
+}
+
+.nav-link.portfolio {
+  .nav-icon {
+    background-image: url('/assets/images/icons/portfolio.svg');
+  }
+}
+
+.nav-link.journal {
+  .nav-icon {
+    background-image: url('/assets/images/icons/journal.svg');
+  }
+}
+
+.nav-link.contact {
+  .nav-icon {
+    background-image: url('/assets/images/icons/contact.svg');
+  }
+}

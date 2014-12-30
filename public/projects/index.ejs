@@ -1,0 +1,67 @@
+<section class="latest-projects">
+
+  <div class="latest-project buoy">
+    <!-- <a href="/projects/buoy"> -->
+      <div class="project-content">
+        <header>
+          <h3 class="project-title"><i class="project-icon"></i><%- public.projects._data['buoy'].title %></h3>
+          <span class="category"><%- public.projects._data['buoy'].category %></span>
+        </header>
+        <p><%- public.projects._data['buoy'].description %><br><small><%- public.projects._data['buoy'].technology %></small><br><a href="<%- public.projects._data['buoy'].link %>" target="_blank">View Project</a></p>
+      </div>
+      <div class="project-image">
+      </div>
+    <!-- </a> -->
+  </div>
+
+</section>
+
+<section class="projects-list">
+  <ul>
+    <% for(slug in public.projects._data) { %>
+
+      <% if(slug != "index") { %>
+        <% var project = public.projects._data[slug] %>
+        <% var classes = project.published == false ? 'unpublished' : null  %>
+
+          <% if(project.published !== false && project.hidden !== true) { %>
+            <li class="project <%- slug %> <%- classes %>">
+              <a href="/projects/<%- slug %>">
+                <header>
+                  <h3 class="project-title"><i class="project-icon"></i><%- project.title %></h3>
+                  <div class="category"><%- project.category %></div>
+                </header>
+                <div class="project-content">
+                  <img class="img-responsive" src="/assets/images/projects/<%- slug %>/thumb.png" title="<%- project.title %>" %>
+                  <p class="project-description"><%- project.description %><br><small><%- project.technology %></small></p>
+                </div>
+              </a>
+            </li>
+
+            <% } else if(project.published == false && project.hidden !== true) { %>
+
+              <li class="project <%- slug %> <%- classes %>">
+                <div class="project-content">
+                  <img class="img-responsive" src="/assets/images/projects/<%- slug %>/thumb.png" title="<%- project.title %>" %>
+                  <p class="project-description"><%- project.description %>
+                    <br><small><%- project.technology %></small>
+                    <% if(project.link) { %>
+                    <br><a href="<%- project.link %>" target="_blank">View Project</a>
+                    <% } %>
+                  </p>
+                </div>
+                <header>
+                  <h3 class="project-title"><i class="project-icon"></i><%- project.title %></h3>
+                  <div class="category"><%- project.category %></div>
+                </header>
+              </li>
+
+          <% } %>
+
+
+      <% } %>
+
+    <% } %>
+
+  </ul>
+</section>

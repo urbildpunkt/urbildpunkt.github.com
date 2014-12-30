@@ -1,0 +1,115 @@
+{
+  "globals": {
+    "site": "John Quealy",
+    "description": "Product Designer.",
+    "url": "http://urbildpunkt.com",
+
+    "basics": {
+      "name": "John Quealy",
+      "label": "Product Designer",
+      "picture": "https://lh3.googleusercontent.com/-zcIVGmqRm7E/VApIOXeXj3I/AAAAAAAAD6M/AOZ8J2u39aI/s1058-no/43b449e1-e125-416d-98a4-801fe3d13db5",
+      "email": "john@urbildpunkt.com",
+      "phone": "(619) 248-5304",
+      "website": "http://urbildpunkt.com",
+      "summary": "Sum me up",
+      "location": {
+        "address": "",
+        "postalCode": "CA",
+        "city": "San Diego",
+        "countryCode": "US",
+        "region": "California"
+      },
+      "profiles": [
+        {
+          "network": "Twitter",
+          "username": "urbildpunkt",
+          "url": ""
+        }
+      ]
+    },
+    "clients": [],
+    "work": [
+      {
+        "company": "Volary Foundation",
+        "position": "Product Designer, User Experience Lead",
+        "website": "http://volary.org",
+        "startDate": "Apr 2014",
+        "endDate": "Nov 2014",
+        "summary": "Lead the design and user experience of a small team building services and platforms to benefit businesses and non profits while focusing on the principles of transparency and openness.",
+        "highlights": [
+          "Build an algorithm for artist to detect if their music was violating copy right infringement laws",
+          "Successfully won Techcrunch Disrupt",
+          "Optimized an algorithm that holds the current world record for Weisman Scores"
+        ]
+      },
+      {
+        "company": "Freelance",
+        "position": "Web Designer, Front-End Development",
+        "website": "http://urbildpunkt.com",
+        "startDate": "Sept 2010",
+        "summary": "Created websites, graphics, and marketing materials for customers and clients with a focus on mobile ready, responsive designs.",
+        "highlights": [],
+        "endDate": "Apr 2014"
+      }
+    ],
+    "volunteer": [],
+    "education": [
+      {
+        "institution": "University of California, San Diego",
+        "area": "Interdisciplinary Computing and the Arts, Visual Arts",
+        "studyType": "Bachelor of Arts",
+        "startDate": "Sept 2010",
+        "endDate": "Dec 2012",
+        "gpa": "3.7",
+        "honors": "Provost Honors, Phi Beta Kappa Academic Honor Society",
+        "courses": []
+      }
+    ],
+    "awards": [
+      {
+        "title": "Special Prize",
+        "date": "Nov 2014 - General Assembly, Santa Monica",
+        "awarder": "Techweek Hackathon Los Angeles",
+        "summary": "There is no spoon."
+      },
+      {
+        "title": "Best of ICAM",
+        "date": "June 2012 - Calit2 Digital Cinema Auditorium",
+        "awarder": "UCSD Visual Arts",
+        "summary": "There is no spoon."
+      }
+    ],
+    "publications": [],
+    "skills": [
+      {
+        "name": "Web Development",
+        "level": "Master",
+        "keywords": [
+          "HTML",
+          "CSS",
+          "Javascript"
+        ]
+      }
+    ],
+    "languages": [
+      {
+        "language": "English",
+        "fluency": "Native speaker"
+      },
+      {
+        "language": "Spanish",
+        "fluency": "Working proficiency"
+      }
+    ],
+    "interests": [
+      {
+        "name": "Wildlife",
+        "keywords": [
+          "Ferrets",
+          "Unicorns"
+        ]
+      }
+    ],
+    "references": []
+  }
+}

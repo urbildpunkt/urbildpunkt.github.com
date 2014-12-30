@@ -1,0 +1,390 @@
+
+.latest-projects {
+  padding: 0 2em;
+
+  @include media ($medium-screen) {
+    padding: 0;
+  }
+}
+
+
+.latest-project {
+  @extend .animated;
+  @extend .fadeInUp;
+  @extend %container;
+  margin-top: 2em;
+  background-color: white;
+  min-height: 350px;
+  max-width: 420px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12);
+
+  @include media ($medium-screen) {
+    max-width: 68em;
+  }
+
+  .project-content {
+    @include span-columns(12);
+    background-color: white;
+
+    @include media ($medium-screen) {
+      @include span-columns(6);
+      min-height: 350px;
+      //border-right: 1px solid rgba(0, 0, 0, 0.05);
+    }
+
+    @include media ($large-screen) {
+      @include span-columns(4);
+    }
+
+    header {
+      @include transition(all .2s ease-in-out);
+    }
+
+    .project-icon {
+      margin-right: .6em;
+    }
+
+    h3 {
+      display: block;
+      font-family: $sans-serif;
+      font-size: 1.4em;
+      font-weight: 500;
+      margin-bottom: .15em;
+      padding-left: 1em;
+    }
+
+    .category {
+      margin-top: .5em;
+      margin-left: 6.4em;
+      padding-bottom: 1.5em;
+    }
+
+    p {
+      font-weight: 400;
+      padding: 2em;
+      text-align: center;
+
+      small {
+        display: block;
+        font-family: $sans-serif;
+        font-size: 80%;
+        font-weight: 400;
+        color: $medium-gray;
+      }
+    }
+  }
+
+  .project-image {
+    @include span-columns(12);
+    //padding: 1em;
+    min-height: 350px;
+    overflow: hidden;
+    background: url("/assets/images/projects/buoy/thumb-sm.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+
+    img {
+      min-width: 700px;
+    }
+
+    @include media ($medium-screen) {
+      @include span-columns(6);
+      background: url("/assets/images/projects/buoy/thumb-md.png");
+      background-position: -5px 1em;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    @include media ($large-screen) {
+      @include span-columns(8);
+      background: url("/assets/images/projects/buoy/thumb-lg.png");
+      background-position: center 2em;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+
+}
+
+
+.projects-list {
+  @extend %container;
+  padding: 0 2em;
+
+  @include media ($medium-screen) {
+    padding: 0;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    padding-top: 1.6em;
+  }
+
+  .project {
+    @extend %block-card;
+    @extend .fadeInUp;
+    max-width: 420px;
+    overflow: hidden;
+
+    @include media ($medium-screen) {
+      @include span-columns(6);
+      @include omega(2n);
+    }
+
+    @include media ($large-screen) {
+      @include omega-reset(2n);
+      @include span-columns(4);
+      @include omega(3n);
+    }
+
+    h3 {
+      display: block;
+      font-family: $sans-serif;
+      font-size: 1em;
+      font-weight: 500;
+      margin-bottom: .15em;
+    }
+
+    .category {
+      margin-top: .2em;
+      margin-left: 3.6em;
+    }
+
+    header {
+      @include transition(all .2s ease-in-out);
+      margin-top: -1em;
+      padding: 0 0 1em 1.5em;
+    }
+
+    .project-content {
+      position: relative;
+      text-align: center;
+    }
+
+    p {
+      margin-top: 1em;
+    }
+
+    img {
+      padding: 1em;
+    }
+
+    &:hover {
+
+      .project-description {
+        opacity: 1;
+      }
+    }
+
+    &:nth-child(2) {
+      @include animation-delay(.2s);
+    }
+    &:nth-child(3) {
+      @include animation-delay(.4s);
+    }
+    &:nth-child(4) {
+      @include animation-delay(.2s);
+    }
+    &:nth-child(5) {
+      @include animation-delay(.4s);
+    }
+    &:nth-child(6) {
+      @include animation-delay(.6s);
+    }
+    &:nth-child(7) {
+      @include animation-delay(.2s);
+    }
+    &:nth-child(8) {
+      @include animation-delay(.4s);
+    }
+    &:nth-child(9) {
+      @include animation-delay(.6s);
+    }
+  }
+}
+
+.project-description {
+  @include transition(all .2s ease-in-out);
+  position: absolute;
+  background: rgba(255,255,255,0.96);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 4em 2em;
+  font-weight: 400;
+  opacity: 0;
+
+  small {
+    display: block;
+    font-family: $sans-serif;
+    font-size: 80%;
+    font-weight: 400;
+    color: $medium-gray;
+  }
+}
+
+.project-icon {
+  @include transition(all .2s ease-in-out);
+  display: inline-block;
+  //visibility: hidden;
+  position: relative;
+  top: .7em;
+  width: 2em;
+  height: 2em;
+  margin-right: .8em;
+  border-radius: 50%;
+  background-color: $light-gray;
+  background-repeat: no-repeat;
+  background-size: 1.5em;
+  background-position: center center;
+}
+
+.project-intro {
+  @extend %container;
+
+  .hero {
+    @extend %card;
+    @extend .fadeInUp;
+    margin-bottom: 1em;
+  }
+}
+
+.project-body {
+  @extend %container;
+  @extend %card;
+  @extend .fadeInUp;
+}
+
+.latest-project.buoy, .project.buoy {
+
+  .project-icon {
+    @include background(linear-gradient(90deg, lighten($light-gray, 5) 50%, $light-gray 50%));
+    //background-image: url('/assets/images/icons/buoy.svg');
+    background-repeat: no-repeat;
+
+    &:after {
+      display: block;
+      width: 100%;
+      height: 100%;
+      content: "";
+      background-image: url('/assets/images/icons/buoy.svg');
+      background-size: 80%;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+
+  header {
+    //background-color: #2F6FB8;
+  }
+}
+
+.project.openly-secular {
+
+  .project-icon {
+    background-image: url('/assets/images/icons/openly-secular.svg');
+  }
+
+  header {
+  //  background-color: #E64A19;
+  }
+}
+
+.project.campaign-builder {
+
+  .project-icon {
+    background-image: url('/assets/images/icons/campaign-builder.svg');
+  }
+
+  header {
+  //  background-color: #D32F2F;
+  }
+}
+
+.project.opengov {
+
+  .project-icon {
+    background-image: url('/assets/images/icons/opengov.svg');
+  }
+
+  header {
+  //  background-color: #558B2F;
+  }
+}
+
+.project.starcraft-wcs {
+
+  .project-icon {
+    background-image: url('/assets/images/icons/starcraft-wcs.svg');
+  }
+
+  header {
+  //  background-color: #283593;
+  }
+}
+
+.project.google-xy {
+
+  .project-icon {
+    background-image: url('/assets/images/icons/google-xy.svg');
+  }
+
+  header {
+  //  background-color: #673AB7;
+  }
+}
+
+.project.planeshift {
+
+  .project-icon {
+    background-image: url('/assets/images/icons/planeshift.svg');
+  }
+
+  header {
+  //  background-color: #00695C;
+  }
+}
+
+.project.ghostwire {
+
+  .project-icon {
+    background-image: url('/assets/images/icons/ghostwire.svg');
+  }
+}
+
+.project.inkfish {
+
+  .project-icon {
+    background-image: url('/assets/images/icons/inkfish.svg');
+  }
+}
+
+.project.camidesign {
+
+  .project-icon {
+    background-image: url('/assets/images/icons/camidesign.svg');
+  }
+}
+
+.project.digital-wind-chime {
+
+  .project-icon {
+    background-image: url('/assets/images/icons/digital-wind-chime.svg');
+  }
+}
+
+.project.seizure-monitor {
+
+  .project-icon {
+    background-image: url('/assets/images/icons/seizure-monitor.svg');
+  }
+}
+
+.project.public-sphere {
+
+  .project-icon {
+    background-image: url('/assets/images/icons/public-sphere.svg');
+  }
+}

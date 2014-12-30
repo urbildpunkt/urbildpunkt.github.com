@@ -1,0 +1,60 @@
+
+.intro {
+  @extend %container;
+
+  .left {
+    @extend %one-third;
+    @extend %card;
+    @extend .fadeInLeft;
+
+    img {
+      height: 100px;
+      width: auto;
+      border-radius: 50%;
+    }
+  }
+
+  .right {
+    @extend %two-thirds;
+    @extend %card;
+    @extend .animated;
+    @extend .fadeInRight;
+  }
+}
+
+.experience, .education, .awards {
+  @extend %container;
+  @extend %card;
+  @extend .fadeInUp;
+
+  h2 {
+    @extend %card-icon-header;
+  }
+}
+
+.job, .school, .award {
+  @extend %card-body;
+
+  h3 {
+    display: block;
+    font-family: $sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+  }
+
+  p {
+    margin-top: .5em;
+  }
+}
+
+.experience {
+  @include animation-delay(.2s);
+}
+
+.education {
+  @include animation-delay(.4s);
+}
+
+.awards {
+  @include animation-delay(.6s);
+}

@@ -1,0 +1,51 @@
+
+<!-- <section class="intro">
+  <article class="left">
+    <p><img src="<%= basics.picture %>"></p>
+    <blockquote>Latest Tweet</blockquote>
+  </article>
+  <article class="right">
+    Social Media Links - GITHUB REPORT CARD!
+  </article>
+</section> -->
+
+<section class="experience">
+  <h2><figure><img src="assets/images/icons/work.svg"></figure><span>Experience</span></h2>
+
+  <% for (job in work) { %>
+    <% var job = work[job] %>
+    <article class="job">
+      <h3 class="job-position"><%= job.position %></h3>
+      <span class="job-company"><%= job.company %></span>
+      <span class="date"><%= job.startDate %> - <%= job.endDate %></span>
+      <p class="job-summary"><%= job.summary %></p>
+    </article>
+  <% } %>
+</section>
+
+<section class="education">
+  <h2><figure><img src="assets/images/icons/school.svg"></figure><span>Education</span></h2>
+
+  <% for (school in education) { %>
+    <% var school = education[school] %>
+    <article class="school">
+      <h3 class="school-area"><%= school.area %></h3>
+      <span class="school-name"><%= school.studyType %>  - <%= school.institution %></span>
+      <span class="date"><%= school.startDate %> - <%= school.endDate %></span>
+      <small class="school-honors"><%= school.honors %></small>
+    </article>
+  <% } %>
+</section>
+
+<section class="awards">
+  <h2><figure><img src="assets/images/icons/award.svg"></figure><span>Awards</span></h2>
+
+  <% for (award in awards) { %>
+    <% var award = awards[award] %>
+    <article class="award">
+      <h3 class="award-title"><%= award.title %></h3>
+      <span class="award-awarder"><%= award.awarder %></span>
+      <span class="date"><%= award.date %></span>
+    </article>
+  <% } %>
+</section>

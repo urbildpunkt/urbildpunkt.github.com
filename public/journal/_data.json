@@ -1,0 +1,27 @@
+{
+  "index": {
+    "title": "Journal"
+  },
+  
+  "test": {
+    "title": "test",
+    "tagline": "Loren getsum on this test baby.",
+    "link": "url",
+    "date": "Early 2013",
+    "published": true
+  },
+  "test2": {
+    "title": "test",
+    "tagline": "Loren getsum on this test baby.",
+    "link": "url",
+    "date": "Early 2013",
+    "published": true
+  },
+  "test3": {
+    "title": "test",
+    "tagline": "Loren getsum on this test baby.",
+    "link": "url",
+    "date": "Early 2013",
+    "published": false
+  }
+}

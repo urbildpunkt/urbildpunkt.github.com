@@ -1,0 +1,147 @@
+.index-hero {
+  height: 400px;
+  background: #292D30;
+  background-image: url('/assets/images/69.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hero-intro {
+  height: 100%;
+  //color: white;
+  padding: 10em 0;
+  text-align: center;
+  background: rgba(245,245,245,0.8);
+
+  h2 {
+    max-width: 400px;
+    margin: 0 auto;
+    font-weight: 400;
+  }
+}
+
+.expertise {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: white;
+  padding-top: 2em;
+  //border-bottom: 10px solid #D4D5D5;
+}
+.skills {
+  @extend %container;
+}
+
+
+.icon-card {
+  @include span-columns(4);
+  position: relative;
+  height: 120px;
+  overflow: hidden;
+
+  @include media($medium-screen) {
+    height: 145px;
+  }
+
+  img {
+    max-width: 50%;
+    border-radius: 50%;
+
+    @include media($medium-screen) {
+      max-width: 100%;
+    }
+  }
+
+}
+
+.clipboard {
+  @extend .animated;
+  @extend .fadeInUp;
+  position: absolute;
+  left: 34%;
+}
+
+.mind-map {
+  @extend .animated;
+  @extend .fadeInUp;
+  position: absolute;
+  left: 34%;
+  animation-delay: .2s;
+}
+
+.coding-html {
+  @extend .animated;
+  @extend .fadeInUp;
+  position: absolute;
+  left: 34%;
+  animation-delay: .4s;
+}
+
+
+.featured.projects-list {
+
+  h2 {
+    @extend .animated;
+    @extend .fadeInUp;
+    color: $medium-gray;
+    margin: 1em 0 .2em 0;
+    font-weight: 300;
+
+    a {
+      float: right;
+      font-size: 14px;
+      font-weight: 400;
+      padding-top: 1em;
+    }
+  }
+  .project {
+
+    &:first-child {
+
+      .project-content {
+        img {
+          //float: right;
+        }
+        .project-description {
+        }
+      }
+    }
+
+    &:nth-child(4) {
+      @include animation-delay(.6s);
+    }
+
+    @include media ($medium-screen) {
+      @include span-columns(6);
+      @include omega(2n);
+    }
+
+    @include media ($large-screen) {
+      @include omega-reset(2n);
+      @include omega-reset(3n);
+      @include span-columns(4);
+      @include omega(4n);
+
+      &:first-child {
+        @include omega-reset(4n);
+        @include span-columns(12);
+        @include omega();
+        max-width: 100%;
+        background-image: url("/assets/images/projects/buoy/thumb-lg.png");
+        background-position: right 1em;
+        background-size: 60%;
+        background-repeat: no-repeat;
+
+        img {
+          visibility: hidden;
+        }
+
+        .project-description {
+          opacity: 1;
+          width: 40%;
+        }
+      }
+    }
+  }
+}

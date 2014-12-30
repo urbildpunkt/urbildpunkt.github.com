@@ -1,15 +1,11 @@
-# Urbildpunkt.com
+# Harp, Gulp And BrowserSync
 
-The personal website of John Quealy.
+A ready-to-go Gulp and Harp set up that does auto css injection via BrowserSync.
 
+You can set it via Harp with:
 
-## Built with
+```console
+harp init src --boilerplate superhighfives/harp-gulp-browsersync-boilerplate
+```
 
-- [Sass](http://sass-lang.com/) support with [Bourbon](http://bourbon.io/) & [Neat](http://neat.bourbon.io/)
-- [HTML5 Boilerplate](http://html5boilerplate.com/)
-- [middleman](http://middlemanapp.com/)
-- [Livereload](https://github.com/middleman/middleman-livereload)
-- CSS & Javascript minification, image optimisation on build
-
-
-Urbildpunkt: the point before undergoing a transformation, the protopixel.
+Then, success.
